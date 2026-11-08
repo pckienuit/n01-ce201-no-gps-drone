@@ -1,0 +1,102 @@
+{
+  "verified_at": "2026-11-07T16:52:29.730038+07:00",
+  "image_id": "sha256:2c93a5b99bbe456a631428885628f560712dfa7b68c6452b6b4ea55cabc9d779",
+  "px4_commit": "6ea3539157ca358c70a515878b77077af7d4611d",
+  "versions": "Python 3.12.3\n8.15.0\ncmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\nmavsdk 3.17.4\n",
+  "scope": "disarmed setup smoke and restart; no arm/hover/square/fault/KPI",
+  "smoke_pass": true,
+  "container_stopped": true,
+  "evidence": {
+    "setup-16_33_48.ulg": {
+      "bytes": 13958839,
+      "sha256": "a704ba4ce4b2a9b72a0426dd9d1dd01d759203025d449f950e3a9c53236cab2f"
+    },
+    "mavsdk-smoke.log": {
+      "bytes": 1302,
+      "sha256": "5caa1430743684483dbf8226a386d8aeb1092a63daaa9c17d478811e771e1fad"
+    },
+    "setup-params.bson": {
+      "bytes": 289,
+      "sha256": "54f6e723751be7ae38f64eb9b29042fdedf3381498b7cf56d18760c0c270b221"
+    },
+    "image-check.log": {
+      "bytes": 131,
+      "sha256": "3565e3fec827ac693f3444d2db5f47085ca8c157b12e04eb7dc3aab384317138"
+    },
+    "gazebo-gt-sample.txt": {
+      "bytes": 2042,
+      "sha256": "9560285119af7f7d32b13394862bed631367769d012f963a43e110f513dde656"
+    },
+    "versions-final.txt": {
+      "bytes": 126,
+      "sha256": "b4ab46cfd6af18190b5868ce0a2898508b023117521acb0bb2cd8448c940e359"
+    },
+    "dpkg-lock.txt": {
+      "bytes": 45060,
+      "sha256": "0a907b5fe515e0d78423bf5a7c3ac021bd6d34bad1a05a7244839f46b4e82f58"
+    },
+    "mavsdk-smoke-v3.log": {
+      "bytes": 1597,
+      "sha256": "f8fd670f23a2296741394f744525accb5587c9247d36e52801d164a494123ab6"
+    },
+    "setup-16_35_45.ulg": {
+      "bytes": 9982177,
+      "sha256": "ab5542da82854e4f74f838787ddf1e7d31d83d2401f40424f71fb7bedc2f1064"
+    },
+    "source-lock.json": {
+      "bytes": 1355,
+      "sha256": "f5e96102555faab2d7861315e9b55784ad26a6960307416d7d643acb16b28060"
+    },
+    "sensors-disarmed.log": {
+      "bytes": 5009,
+      "sha256": "add3203f323638451a224273372cfdc42c02ac55898914e11af4e307a666e511"
+    },
+    "smoke-restart.log": {
+      "bytes": 6434,
+      "sha256": "4a7487406fe5cfce6c3e2199ff29da6442cd7328e4450106b3df80841614c62d"
+    },
+    "boot.log": {
+      "bytes": 4129,
+      "sha256": "e5802ab1baef407794200167eebc49e6a1c71cc32bbf37aa9678dc7b8c6ebfca"
+    },
+    "boot-restart.log": {
+      "bytes": 3034,
+      "sha256": "4e29dcf6ceb68b3b26d07d11f9533fae71281b932e346503b29af3b578a5fe32"
+    },
+    "boot-final.log": {
+      "bytes": 3219,
+      "sha256": "ede2b1b80bdf3ed264d1d96f10efaf198031150da8ca387f9fec0f6d923003d4"
+    },
+    "smoke-final.log": {
+      "bytes": 6453,
+      "sha256": "858f8d335ed141594455013bbff19b6d1e42ecd7961bd14d2e0d9efb468df954"
+    },
+    "px4-build.log": {
+      "bytes": 134983,
+      "sha256": "7da9ca27171e90667f95d86f806440a9ff8a42b7c955c3f6505c4e536febc320"
+    },
+    "docker-mavsdk3-build.log": {
+      "bytes": 5098,
+      "sha256": "5bfbd89ecf3cfb1259663f5b1c637fcc3f6dbfc63311322ae04116c23ed260b9"
+    },
+    "docker-build.log": {
+      "bytes": 503443,
+      "sha256": "149a7890b3037e35a37ed746c729d78d81b5f6b7c968a209d79c660533d1ee65"
+    },
+    "submodules.log": {
+      "bytes": 3086,
+      "sha256": "66b76a39884980ff4bf70d7983e05fd17ed3fafcc5d82d0c36d4aa33f310b886"
+    },
+    "status-disarmed.log": {
+      "bytes": 527,
+      "sha256": "9050d26971fcf4ad97b6d367bfa6deb54badbb9952e8079b0afc2f5081c31a3d"
+    },
+    "python-lock.txt": {
+      "bytes": 1195,
+      "sha256": "326770e6e06e36e197cf69046f60de670064e87b50eb6ed57290d7c05fd94a33"
+    }
+  },
+  "world": "indoor_flow.sdf",
+  "textured_plane_model": "Tools/simulation/gz/models/textured_plane",
+  "prearm_armable_verified": true
+}

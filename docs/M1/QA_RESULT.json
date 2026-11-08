@@ -1,0 +1,13 @@
+{
+  "pages_total": 13,
+  "references": 13,
+  "survey_sources_excluding_advisor": 12,
+  "first_citation_order": "PASS",
+  "content": "PASS",
+  "page_bounds": "PASS",
+  "literal_evidence_presence": "PASS",
+  "fatal_layout_or_reference_warnings": "NONE",
+  "underfull_boxes": 0,
+  "sha256": "844f26990d419cd3d0cdc59ce318be5752dcda16582a4afe7b6c37fac37a6bfe",
+  "note": "QA checks structure and citation mapping, not all factual claims, advisor approval or flight performance."
+}

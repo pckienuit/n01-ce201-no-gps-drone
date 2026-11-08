@@ -1,0 +1,315 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{DejaVu Sans Mono}[Scale=0.82]
+\usepackage[top=3cm,bottom=3.5cm,left=3.5cm,right=2cm]{geometry}
+\usepackage{setspace,amsmath,array,longtable,booktabs,tabularx,enumitem,tikz,xurl}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[unicode,hidelinks]{hyperref}
+\hypersetup{pdftitle={N01 - Đặc tả đề tài và kế hoạch 13 tuần - M0},pdfauthor={Phan Chí Kiên; Hồ Nhật Khanh}}
+\renewcommand{\contentsname}{Mục lục}
+\renewcommand{\refname}{Tài liệu tham khảo}
+\renewcommand{\tablename}{Bảng}
+\renewcommand{\figurename}{Hình}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\makeatletter
+\renewcommand\normalsize{\@setfontsize\normalsize{13}{16}}
+\makeatother
+\AtBeginDocument{\normalsize\onehalfspacing}
+\hypersetup{pageanchor=false}
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{3em}
+\setlist{nosep,leftmargin=1.5em}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\tblfont}{\setstretch{1.08}\fontsize{13}{16}\selectfont}
+\begin{document}
+\begin{titlepage}
+\centering
+{\large ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\par}
+{\large TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN\par}
+{\large\bfseries KHOA KỸ THUẬT MÁY TÍNH\par}
+\vspace{1.7cm}
+{\Large\bfseries ĐẶC TẢ ĐỀ TÀI\par VÀ KẾ HOẠCH 13 TUẦN\par}
+\vspace{0.4cm}
+{\large Mốc M0 • Đồ án 1 (CE201)\par Học kỳ 1, năm học 2026–2027\par}
+\vspace{1.2cm}
+{\LARGE\bfseries PHÁT TRIỂN THUẬT TOÁN\par BAY KHÔNG GPS CHO DRONE\par}
+\vspace{1cm}
+{\large Nhóm N01\par}
+\vspace{0.5cm}
+\begin{tabular}{ll}
+Giảng viên hướng dẫn: & ThS. Nguyễn Duy Xuân Bách\\[5pt]
+Sinh viên thực hiện: & Phan Chí Kiên \quad 23520804\\
+ & Hồ Nhật Khanh \quad 23520716
+\end{tabular}
+\vfill
+Bản dự thảo để nhóm rà soát trước khi nộp\\
+Ngày lập: 29/09/2026 • Hạn M0: 23:59, 05/10/2026
+\end{titlepage}
+\pagenumbering{gobble}
+\begingroup\setstretch{1.0}\tableofcontents\endgroup
+\clearpage
+\pagenumbering{arabic}\hypersetup{pageanchor=true}
+\section*{Tóm tắt}
+\addcontentsline{toc}{section}{Tóm tắt}
+Đề tài khảo sát và đề xuất cách giữ vị trí, bay theo điểm trong nhà cho drone bốn cánh khi không có GPS. Hệ thống dự kiến kết hợp dữ liệu quán tính, cảm biến dòng quang học (optical flow) hướng xuống và cảm biến khoảng cách trong bộ lọc Kalman mở rộng của PX4. Nhóm kiểm chứng trên mô phỏng trước, sau đó thử giữ vị trí thật ở độ cao thấp trong khu vực có bảo hộ theo yêu cầu N01 của giảng viên hướng dẫn (GVHD)\cite{assignment}.
+
+Trong CE201, nhóm tập trung khảo sát, lựa chọn giải pháp, hiện thực thử nghiệm và đánh giá bằng số liệu, không viết lại EKF2 từ đầu. Phần việc dự kiến gồm cấu hình và kiểm chứng luồng ước lượng không GPS, xây dựng chương trình bay cục bộ, thử nghiệm một bộ giám sát nhiệm vụ và xây dựng quy trình đo sai số độc lập. Bộ giám sát là đề xuất kỹ thuật để GVHD xem xét, chưa được phê duyệt riêng.
+
+Tại thời điểm lập đặc tả, N01 đã có tài liệu khảo sát và trao đổi với N02, nhưng chưa chạy SITL, chưa kiểm tra cảm biến trên bàn và chưa bay thật. Các ngưỡng thử nghiệm và phân công trong báo cáo là kế hoạch đề xuất, không phải kết quả thực nghiệm.
+
+\section{Thông tin và căn cứ đặc tả}
+\subsection{Tên đề tài và hướng thực hiện}
+Tên đề tài giữ nguyên: \textbf{Phát triển thuật toán bay không GPS cho Drone}. Hướng thực hiện: giữ vị trí và bay waypoint trong nhà bằng optical flow, cảm biến khoảng cách và EKF; kiểm chứng trên SITL trước khi bay thật. SITL (Software-in-the-Loop) là hình thức chạy firmware điều khiển bay trên máy tính, nối với mô hình vật lý drone trong trình mô phỏng.
+
+Báo cáo bám theo tài liệu GVHD gửi ngày 25/09/2026, nhất là yêu cầu M0 và các mốc M1--M5\cite{assignment}. Kế hoạch áp dụng \textbf{13 tuần, từ 28/09 đến 27/12/2026}, thay kế hoạch nội bộ 15 tuần trước đây. Lịch bảo vệ do Khoa/GVHD thông báo riêng, không nhất thiết trùng hạn M5.
+
+\subsection{Hiện trạng phối hợp với N02}
+Email của Lâm Vương Quốc Lĩnh ngày 28/09/2026 cho biết N02 định hướng PX4-Autopilot, Gazebo Harmonic (gz-sim 8.11.0), Ubuntu 24.04.4 LTS, Python 3.12 và MAVSDK-Python; ROS 2 mới ở mức dự kiến khảo sát. N02 dùng X500 làm mô hình cơ sở, chưa chốt cấu hình optical flow và cảm biến khoảng cách\cite{n02mail}.
+
+Nhóm ưu tiên đồng bộ với cấu hình này nhưng chưa kiểm chứng trên máy N01. Phiên bản/commit PX4, phiên bản MAVSDK, mô hình cảm biến, cách lấy dữ liệu chuẩn và ngày bàn giao bản dùng thử còn cần hai nhóm thống nhất. Ubuntu 24.04.4 khác bản 22.04 nêu trong mô tả N02; cần ghi nhận khác biệt và xác nhận trước, không mặc định mọi tổ hợp phiên bản đều tương thích.
+
+\section{Bài toán, mục tiêu và phạm vi}
+\subsection{Bài toán kỹ thuật}
+Khi không có GPS, drone cần một nguồn quan sát chuyển động ngang để hạn chế trôi vị trí. Optical flow quan sát chuyển động ảnh của mặt sàn; dữ liệu khoảng cách cung cấp tỷ lệ để quy đổi chuyển động góc thành đơn vị mét. IMU hỗ trợ dự đoán trạng thái và bù ảnh hưởng quay\cite{flow,ekf}. Tuy nhiên, vị trí ngang vẫn có thể trôi theo thời gian; cấu hình này không tương đương một hệ định vị tuyệt đối trong toàn bộ căn phòng.
+
+Điều kiện làm việc dự kiến: không gian trong nhà, mặt sàn gần phẳng, có hoa văn và đủ ánh sáng; cảm biến hướng xuống nằm trong vùng đo hợp lệ. Hướng thân (yaw) và hiệu chuẩn cảm biến cũng ảnh hưởng phép đổi vận tốc từ hệ thân sang hệ cục bộ. Nhóm cần kiểm tra các giả thiết này trước mỗi đợt đo.
+
+\subsection{Mục tiêu}
+\begin{enumerate}
+\item Khảo sát giải pháp, sản phẩm và nghiên cứu trong/ngoài nước; lập bảng so sánh có trích dẫn, chọn cấu hình phù hợp với N01.
+\item Nắm rõ luồng IMU--optical flow--range--EKF2, kiểm tra hệ thống có ước lượng cục bộ hợp lệ khi không hợp nhất GPS.
+\item Chạy giữ vị trí và bay hình vuông trên SITL; lưu dữ liệu cảm biến, trạng thái ước lượng, điểm đặt và dữ liệu chuẩn độc lập.
+\item Hiện thực và đánh giá bộ giám sát nhiệm vụ ở mức module; không nhận phần EKF2 hoặc bộ điều khiển có sẵn là thuật toán do nhóm phát triển.
+\item Tích hợp phần cứng và thử giữ vị trí thấp có bảo hộ sau khi đạt các bước kiểm tra an toàn; báo cáo sai số cùng giới hạn của phép đo.
+\end{enumerate}
+
+\subsection{Phạm vi thực hiện và loại trừ}
+\textbf{Thực hiện:} khảo sát; cấu hình một nền PX4; thử nghiệm mô phỏng không GPS; chương trình waypoint cục bộ; ghi và phân tích log; thử lỗi cảm biến/liên lạc trong SITL; kiểm tra phần cứng không cánh; giữ vị trí thật có bảo hộ. Bài hình vuông thật chỉ thực hiện sau khi hover đạt và có khu bay đủ an toàn.
+
+\textbf{Không thực hiện trong CE201:} viết lại EKF từ đầu; phát triển đồng thời PX4 và ArduPilot; SLAM/VIO đầy đủ; tránh vật cản tự động; nhận diện cây trồng hoặc sâu bệnh; thiết kế flight controller mới; bay ngoài trời hay vận hành không giám sát. CE206 có thể kế thừa cấu hình, mã và quy trình đo; chưa cam kết một ứng dụng mở rộng cụ thể.
+
+\textbf{Phương án dự phòng:} nếu thiếu thiết bị hoặc khu bay an toàn, nhóm báo GVHD sớm để xin điều chỉnh phần nghiệm thu thực tế. Kết quả SITL không tự thay thế yêu cầu thử giữ vị trí thật. Phương án hình vuông trên SITL kết hợp hover thật chỉ có hiệu lực khi GVHD đồng ý.
+
+\section{Đầu vào, đầu ra và kiến trúc hệ thống}
+\subsection{Đầu vào và đầu ra}
+Bảng~\ref{tab:io} mô tả dữ liệu tối thiểu. Tần số nhận thực tế, độ trễ và đơn vị được đo/đối chiếu trên phiên bản khóa, không đặt chung một tần số cho mọi loại cảm biến.
+\begingroup\tblfont
+\begin{longtable}{L{3cm}L{6cm}L{4.7cm}}
+\caption{Đầu vào và đầu ra dự kiến}\label{tab:io}\\
+\toprule Thành phần & Nội dung & Điều kiện kiểm tra\\\midrule\endfirsthead
+\toprule Thành phần & Nội dung & Điều kiện kiểm tra\\\midrule\endhead
+IMU (đầu vào) & Gia tốc và tốc độ góc, kèm thời điểm đo; đơn vị theo giao diện cảm biến/firmware. & Hướng trục, bias, độ rung, thời điểm lấy mẫu.\\
+Optical flow (đầu vào) & Chuyển động ảnh/góc tích phân, thời gian tích phân, chất lượng đo; quy đổi theo driver. & Không nhầm dữ liệu tích phân (rad) với tốc độ (rad/s); bù quay và offset.\\
+Range (đầu vào) & Khoảng cách hướng xuống, đơn vị mét, trạng thái hợp lệ và giới hạn đo. & Không đồng nhất khoảng cách xiên với độ cao đứng khi drone nghiêng.\\
+Nhiệm vụ (đầu vào) & Điểm đặt cục bộ, độ cao, hướng thân, giới hạn vận tốc và điều kiện dừng. & Đơn vị, gốc tọa độ và hệ trục thống nhất.\\
+Ước lượng (đầu ra) & Vị trí, vận tốc cục bộ, trạng thái hợp lệ của bộ ước lượng. & Xác minh GPS và nguồn vị trí ngoài không tham gia bài kiểm tra không GPS.\\
+Hành vi bay (đầu ra) & Giữ vị trí; lần lượt đi qua bốn đỉnh hình vuông; xử lý dừng nhiệm vụ theo điều kiện. & Đánh giá theo dữ liệu chuẩn, không chỉ nhìn quỹ đạo ước lượng.\\
+Hồ sơ đánh giá & Mã nguồn, cấu hình, ULog, dữ liệu chuẩn, video và đồ thị sai số. & Có phiên bản và mã lần thử; lưu cả lần thất bại/dừng sớm.\\
+\bottomrule
+\end{longtable}\endgroup
+
+\subsection{Sơ đồ khối}
+Hình~\ref{fig:blocks} phân biệt vòng điều khiển và nhánh đánh giá. Ground truth (GT) là dữ liệu chuẩn độc lập, chỉ dùng để đo sai số, không cấp vị trí lý tưởng ngược vào EKF trong bài kiểm tra không GPS.
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners,align=center,text width=4cm,minimum height=1.15cm},arr/.style={-{Latex},thick},node distance=0.8cm and 1.1cm]
+\node[box] (sim) {Gazebo: động lực học drone\\và cảm biến mô phỏng};
+\node[box,right=of sim] (mission) {N01: chương trình nhiệm vụ\\và bộ giám sát đề xuất};
+\node[box,below=of sim] (ekf) {PX4: nhận dữ liệu cảm biến\\và ước lượng EKF2};
+\node[box,below=of mission] (ctrl) {PX4: bộ điều khiển có sẵn\\và đầu ra động cơ};
+\node[box,below=of ekf] (gt) {GT từ Gazebo / camera ngoài\\chỉ phục vụ đánh giá};
+\node[box,below=of ctrl] (eval) {N01: đồng bộ log, đổi hệ trục\\tính sai số và lập báo cáo};
+\draw[arr] (sim) -- (ekf);
+\draw[arr] (ekf) -- (ctrl);
+\draw[arr] (mission) -- node[right]{điểm đặt} (ctrl);
+\draw[arr] (ekf.north east) -- (mission.south west);
+\draw[arr] (ctrl.east) -- ++(0.55,0) |- ([yshift=0.65cm]mission.north) -| (sim.north);
+\draw[arr,dashed] (sim.west) -- ++(-0.4,0) |- (gt.west);
+\draw[arr,dashed] (gt) -- (eval);
+\draw[arr,dashed] (ctrl) -- (eval);
+\draw[arr,dashed] (ekf.south east) -- (eval.north west);
+\end{tikzpicture}
+\caption{Kiến trúc dự kiến; nét đứt là luồng đo lường. Khi bay thật, cảm biến và động cơ thật thay khối mô phỏng.}\label{fig:blocks}
+\end{figure}
+
+\subsection{Lựa chọn nền tảng và giao diện với N02}
+PX4 là lựa chọn ưu tiên để thống nhất với N02. Airframe \code{4021\_gz\_x500\_flow} có trong mã nguồn PX4 v1.16.0; đây là ứng viên để thử, không phải bằng chứng rằng môi trường N02 đã chạy được\cite{airframe}. Nhóm cần kiểm tra revision kho mô hình, plugin và dữ liệu tới EKF trước khi khóa cấu hình.
+
+Trong Gazebo mới, cảm biến đi qua Gazebo Transport và \code{gz\_bridge} vào uORB nội bộ PX4, không mặc định đi qua MAVLink\cite{bridge}. MAVSDK-Python được dùng cho lệnh nhiệm vụ và telemetry. Với bài bay cục bộ, ưu tiên \code{position\_velocity\_ned} để đọc vị trí/vận tốc, không dùng \code{telemetry.position} vì API đó biểu diễn vị trí toàn cầu\cite{sdk}. Lệnh Offboard và điều kiện hợp lệ phải đối chiếu bản PX4 khóa. PX4 yêu cầu luồng chứng minh kết nối còn hoạt động trên 2~Hz; đây không phải tần số lấy mẫu optical flow\cite{offboard}.
+
+Hai nhóm cần thống nhất bằng một tệp cấu hình hoặc README ngắn:
+\begin{itemize}
+\item Phiên bản/commit PX4, revision mô hình, Gazebo, Python và MAVSDK; cách khởi chạy trên máy thứ hai.
+\item Model/world, hướng cảm biến, loại dữ liệu, đơn vị, hệ trục, timestamp và tần số nhận đo được.
+\item Tên topic GT xác định từ môi trường đang chạy, không giả định sẵn; phép biến đổi GT sang hệ cục bộ của PX4.
+\item Cấu hình vô hiệu GPS fusion và các nguồn vị trí lý tưởng; log chứng minh optical flow/range được dùng.
+\item Bản dùng thử tối thiểu, người xử lý lỗi và ngày bàn giao do hai nhóm thống nhất.
+\end{itemize}
+
+N01 có thể chạy môi trường tối thiểu từ mã nguồn chính thức trong lúc N02 xây bản dùng chung. ROS 2 và Docker không bắt buộc cho module đầu tiên. Mô phỏng sàn thiếu hoa văn chỉ có ý nghĩa nếu plugin flow tính từ ảnh; nếu flow tổng hợp từ trạng thái vật lý, nhóm chỉ kết luận về phản ứng trước lỗi tín hiệu được tiêm, không kết luận về ảnh hưởng ánh sáng/texture.
+
+\section{Giải pháp đề xuất và kế hoạch khảo sát}
+\subsection{Phần có sẵn và phần nhóm thực hiện}
+Nhóm sử dụng EKF2, bộ điều khiển và cơ chế an toàn gốc của PX4 làm nền. Nhóm tự thực hiện: cấu hình kiểm chứng không GPS, chương trình waypoint, bộ thu/đồng bộ dữ liệu, công cụ đo sai số và module giám sát nhiệm vụ. Cấu hình tham số không được coi là một EKF mới.
+
+Module giám sát đề xuất gồm ba trạng thái: thực hiện nhiệm vụ, giảm tốc khi chất lượng dữ liệu suy giảm nhưng ước lượng còn hợp lệ, và dừng nhiệm vụ khi điều kiện an toàn không còn đáp ứng. Ngưỡng chất lượng, tuổi dữ liệu và thời gian xác nhận lỗi được chọn từ tập hiệu chuẩn, rồi giữ cố định trên tập đánh giá. Nhóm dùng khoảng trễ chuyển trạng thái để tránh dao động lệnh. Nguồn tín hiệu sức khỏe có thể cần bổ sung từ MAVLink/uORB; không giả định MAVSDK đã cung cấp mọi trường nội bộ EKF.
+
+Khi ước lượng vị trí mất hợp lệ, nhóm không tiếp tục gửi lệnh giữ vị trí dựa trên tọa độ đó. Hành động tiếp theo phụ thuộc trạng thái độ cao, liên lạc và chế độ dự phòng đã kiểm chứng; không mặc định RTL trong nhà hoặc hạ cánh tự động luôn an toàn. Cơ chế an toàn gốc PX4 và quyền can thiệp của người điều khiển vẫn được giữ.
+
+Để đánh giá bộ giám sát, nhóm so với cùng phiên bản PX4, cảm biến, world và nhiệm vụ nhưng không bật module giám sát bổ sung. Các chỉ số so sánh gồm sai số bám, tỷ lệ hoàn thành, thời gian phản ứng lỗi, số lần dừng không cần thiết và thời gian nhiệm vụ. Giảm tốc có thể giảm lỗi bám nhưng không chứng minh bộ ước lượng chính xác hơn. Nếu module không mang lại lợi ích, nhóm báo cáo kết quả âm và phân tích nguyên nhân. Hướng này cần GVHD xác nhận phù hợp hàm lượng thuật toán CE201; chưa cam kết sửa cấu trúc EKF.
+
+\subsection{Danh mục khảo sát dự kiến}
+Bảng~\ref{tab:lit} là danh mục để đọc và so sánh ở tuần 2--3, không phải tuyên bố đã hoàn thành M1. Gageik và cộng sự nghiên cứu định vị bằng flow\cite{gageik}; Wang và cộng sự khảo sát bộ ước lượng có hỗ trợ mô hình khí động\cite{wang}; Honegger và cộng sự trình bày phần cứng camera flow nhúng\cite{honegger}; Grabe và cộng sự nghiên cứu ước lượng chuyển động từ camera và IMU\cite{grabe}. Nguồn trong nước của Nguyễn Minh Tâm và cộng sự dùng camera Logitech C270, trích đặc trưng và PID phân tầng\cite{vn}. Các công trình này khác cấu hình N01, không được chuyển số liệu của tác giả thành hiệu năng dự kiến của nhóm. ARK Flow là ví dụ sản phẩm tích hợp, không phải quyết định mua thiết bị\cite{ark}.
+
+\begingroup\tblfont
+\begin{longtable}{L{4.1cm}L{5.1cm}L{4.5cm}}
+\caption{Nguồn dự kiến khảo sát và câu hỏi cần trả lời}\label{tab:lit}\\
+\toprule Nguồn / loại & Nội dung cần khảo sát & Giới hạn cần đối chiếu\\\midrule\endfirsthead
+\toprule Nguồn / loại & Nội dung cần khảo sát & Giới hạn cần đối chiếu\\\midrule\endhead
+Gageik et al., 2013\cite{gageik}; bài tạp chí & Flow, ước lượng độ cao, giữ vị trí và waypoint. & Phần cứng khác; độ lệch chuẩn không thay cho sai số cực đại.\\
+Wang et al., 2017\cite{wang}; bài hội nghị & Hợp nhất OF/IMU và mô hình khí động; xử lý dữ liệu ảnh kém. & Hiệu chuẩn mô hình; phân biệt lỗi vận tốc và lỗi vị trí.\\
+Honegger et al., 2013\cite{honegger}; bài hội nghị & Thiết kế PX4FLOW, gyro và đo khoảng cách. & Không đồng nhất PX4FLOW với mọi module PMW3901.\\
+Grabe et al., 2015\cite{grabe}; bài tạp chí & Camera--IMU, tỷ lệ metric và so sánh phương pháp ước lượng. & Cần ảnh thô; không cắm trực tiếp thuật toán vào chip chỉ xuất flow.\\
+Nguyen et al., 2022\cite{vn}; nghiên cứu trong nước & Camera hướng xuống, Shi--Tomasi, theo dõi đặc trưng và PID. & Khác sensor/EKF của N01; cần đọc protocol và phép đo trước khi so số liệu.\\
+PX4 Optical Flow\cite{flow}; hướng dẫn kỹ thuật & Driver, hướng cảm biến và điều kiện tích hợp. & Phụ thuộc đúng module và bản firmware.\\
+PX4 EKF2 guide\cite{ekf}; hướng dẫn kỹ thuật & Điều kiện fusion, noise, kiểm tra sức khỏe và log. & Cơ chế có sẵn không phải đóng góp mới.\\
+ARK Flow\cite{ark}; sản phẩm thương mại & Cấu hình cảm biến tích hợp, giao tiếp và khả năng triển khai. & Giá, tồn kho và driver thực tế chưa xác nhận.\\
+PX4 Offboard\cite{offboard}; tài liệu API & Điểm đặt cục bộ, điều kiện vào mode, mất kết nối. & Không thay thế protocol kiểm tra an toàn.\\
+\bottomrule
+\end{longtable}\endgroup
+
+Báo cáo M1 dự kiến có ít nhất tám tài liệu và bảng so sánh theo: cảm biến, nền tảng, nhu cầu tính toán, phạm vi hoạt động, độ trôi, điều kiện thử nghiệm, dữ liệu chuẩn, khả năng tái hiện và chi phí tích hợp. Nhóm phân biệt bài báo, tài liệu kỹ thuật và mô tả sản phẩm; không gọi toàn bộ danh mục là bài báo khoa học. Việc chọn giải pháp cuối cùng dựa cả trên khảo sát và thử tích hợp, không chỉ dựa vào số liệu tốt nhất của một công trình.
+
+\section{Tiêu chí đạt và phương pháp đo}
+\subsection{Yêu cầu gốc và diễn giải đề xuất}
+Theo mô tả N01\cite{assignment}: \textit{giữ vị trí sai lệch $\leq\pm0{,}5$ m trong 30 s ở độ cao 1--1,5 m; bay bốn waypoint hình vuông $2\times2$ m; có log so sánh với ground truth (thước đo/marker).}
+
+Nhóm giữ nguyên yêu cầu này. Để phép thử lặp lại được, nhóm đề xuất đánh giá sai số ngang theo bán kính hai chiều và giá trị cực đại trong toàn cửa sổ 30~s. Đây là \textbf{diễn giải cần GVHD xác nhận}, không tự thay tiêu chí bằng căn sai số bình phương trung bình (RMSE) hay phân vị 95\% (P95).
+
+\subsection{Hai loại sai số}
+Sau khi đổi về cùng hệ trục, gốc tọa độ và đồng bộ thời gian, gọi $\mathbf p_{GT,xy}$ là vị trí ngang chuẩn, $\mathbf p_{sp,xy}$ là điểm đặt và $\hat{\mathbf p}_{xy}$ là vị trí ước lượng:
+\begin{align}
+ e_{hold}(t)&=\|\mathbf p_{GT,xy}(t)-\mathbf p_{sp,xy}(t)\|_2,\\
+ e_{est}(t)&=\|\hat{\mathbf p}_{xy}(t)-\mathbf p_{GT,xy}(t)\|_2.
+\end{align}
+$e_{hold}$ đánh giá khả năng giữ vị trí của toàn hệ thống; $e_{est}$ đánh giá riêng bộ ước lượng. Nhóm báo cáo cực đại, RMSE và P95 của từng loại, nhưng dùng chỉ số đã được GVHD chấp thuận để kết luận đạt KPI. Sai số độ cao được báo cáo riêng.
+
+\subsection{Quy trình đo dự kiến}
+\begin{enumerate}
+\item Khóa cấu hình, điểm đặt và điều kiện bề mặt/ánh sáng. Chọn trước quy tắc bắt đầu cửa sổ đo sau khi ổn định độ cao; không chọn lại đoạn 30~s đẹp nhất sau khi xem log.
+\item Với hover, đề xuất ít nhất ba lần thử cho mỗi độ cao 1,0~m và 1,5~m, ghi đầy đủ các lần đã khởi động. Một lần không đủ 30~s hoặc thiếu GT không được ghi là đạt.
+\item Với hình vuông, xuất phát ở một đỉnh, đi qua bốn đỉnh và khép về điểm đầu, cạnh 2~m. Ghi sai số tới từng đỉnh, độ lệch khỏi cạnh, thời gian hoàn thành và lý do dừng. Ngưỡng đạt waypoint và tốc độ được chốt trước thử nghiệm; đề bài chưa nêu ngưỡng số cho phần này.
+\item Trong SITL, ghi GT từ Gazebo cùng đồng hồ mô phỏng và log PX4. Xác minh ánh xạ hệ trục/gốc bằng các dịch chuyển thử biết trước. Không căn chỉnh riêng từng đoạn để che độ trôi.
+\item Khi bay thật, dùng camera cố định quan sát marker hoặc phương tiện đo độc lập phù hợp. Hiệu chuẩn camera và mặt phẳng ở độ cao bay, hoặc dùng mô hình hình học 3D; không lấy phép chiếu mặt sàn áp thẳng cho marker trên drone vì sai số thị sai.
+\item Ước lượng sai số và độ phân giải hệ đo. Khi dữ liệu thưa, mất marker hoặc độ không chắc chắn đo không đủ để phân biệt ngưỡng 0,5~m, chỉ báo cáo kết quả quan sát, chưa kết luận đạt toàn cửa sổ.
+\end{enumerate}
+
+Thử lỗi mất flow, range không hợp lệ, dữ liệu trễ và mất liên lạc chỉ trong SITL/replay ở giai đoạn này. Với replay, nhóm đánh giá xử lý dữ liệu và quyết định của module; không dùng replay để chứng minh phản ứng bay vòng kín. Dữ liệu sinh nhân tạo chỉ kiểm tra logic phần mềm, không thay số liệu bay mô phỏng hoặc bay thật.
+
+\section{Thiết bị, phần mềm và an toàn}
+\subsection{Danh mục dự kiến mượn và xác minh}
+Tình trạng sở hữu/cho mượn chưa xác nhận. Bảng~\ref{tab:bom} là danh mục đề nghị, không phải danh sách thiết bị đã nhận. Số lượng sensor có thể gộp nếu chọn module tích hợp.
+\begingroup\tblfont
+\begin{longtable}{L{4.5cm}L{1cm}L{8.2cm}}
+\caption{Thiết bị và thông tin cần xác minh}\label{tab:bom}\\
+\toprule Hạng mục & SL & Thông tin cần chốt\\\midrule\endfirsthead
+\toprule Hạng mục & SL & Thông tin cần chốt\\\midrule\endhead
+Flight controller Pixhawk-class & 1 & Model, firmware hỗ trợ, cổng kết nối, pinout, nguồn và bộ nhớ log.\\
+Khung quadrotor, motor, ESC & 1 bộ & Tình trạng, kích thước, tải trọng, cấu hình động cơ và bảo vệ cánh.\\
+Module optical flow hướng xuống & 1 & Mã sản phẩm, driver, giao tiếp, hướng lắp; PMW3901 chỉ là ví dụ trong đề bài.\\
+Rangefinder hướng xuống & 1 & Mã sản phẩm và vùng đo phù hợp; VL53L1X/TFmini là ví dụ, chưa chốt mua.\\
+RC và bộ thu & 1 bộ & Khả năng chuyển chế độ, mất liên lạc và thao tác khẩn cấp đã kiểm tra.\\
+Pin, sạc cân bằng, dụng cụ nguồn & 1 bộ & Đúng điện áp/tải; tình trạng pin; quy trình sạc và bảo quản an toàn của Lab.\\
+Khu bay có lưới hoặc giải pháp bảo hộ được duyệt & 1 & Diện tích, vùng cách ly, khoảng dừng, vị trí người quan sát và quyền sử dụng.\\
+Camera GT, giá đỡ, marker/thước & 1 bộ & Góc nhìn, hiệu chuẩn, tốc độ ghi, độ phân giải, đồng bộ thời gian.\\
+PC chạy SITL & 1 & Kiểm tra cấu hình máy thực tế và khả năng chạy bộ phần mềm chung; chưa mặc định có đủ tài nguyên.\\
+\bottomrule
+\end{longtable}\endgroup
+
+Không mặc định cần Raspberry Pi/Jetson cho CE201. Nơi chạy chương trình nhiệm vụ khi bay thật được chọn sau khi kiểm tra đường truyền và cơ chế an toàn. Nhóm ưu tiên thiết bị Lab đang hỗ trợ; chỉ lập đề nghị mua sau khi xác minh module, driver, nguồn và giao tiếp.
+
+\subsection{Các bước kiểm tra an toàn}
+\begin{enumerate}
+\item \textbf{SITL:} kiểm tra luồng không GPS, hover, waypoint, dừng nhiệm vụ và mất kết nối bằng log. Không bỏ kiểm tra trạng thái hợp lệ để ép drone bay.
+\item \textbf{Trên bàn, tháo cánh:} kiểm tra nguồn, chiều/hướng cảm biến, khoảng cách, bộ thu RC, thứ tự động cơ và hành vi khẩn cấp. Người có kinh nghiệm kiểm tra trước khi chuyển sang bay.
+\item \textbf{Hover thấp có bảo hộ:} cần người điều khiển đủ năng lực và người quan sát riêng. Không mặc định một thành viên đã có kỹ năng lái. Bắt đầu trong vùng làm việc hợp lệ của sensor, tăng độ cao từng bước khi an toàn; chưa thử lỗi cảm biến ngoài đời.
+\item \textbf{Waypoint thật:} chỉ xét sau khi hover ổn, hệ đo hoạt động và khu bay có biên đủ cho kích thước drone, trôi, quãng dừng và bảo hộ. Không dùng kích thước quỹ đạo 2~m làm kích thước tối thiểu của lồng bay.
+\end{enumerate}
+Dây giữ hoặc bảo vệ cánh phải bố trí sao cho không vướng cánh hay làm mất ổn định. Công tắc ngắt động cơ là biện pháp khẩn cấp có thể làm drone rơi, không phải cách hạ cánh thông thường. Nếu chưa đáp ứng điều kiện an toàn, nhóm dừng phần bay thật và báo GVHD.
+
+\section{Kế hoạch 13 tuần và phân công}
+\subsection{Phân công dự kiến}
+\textbf{Phan Chí Kiên} phụ trách chính khảo sát ước lượng, cấu hình EKF2/không GPS, thiết kế module giám sát và tích hợp phần mềm. \textbf{Hồ Nhật Khanh} phụ trách chính khảo sát cảm biến, đo GT và phân tích log, tích hợp phần cứng, quy trình kiểm thử và đóng gói tái hiện. Mỗi người viết phần báo cáo mình phụ trách; hai người kiểm tra chéo mã, dữ liệu và cùng trình bày khi bảo vệ. Phân công này cần hai thành viên xác nhận trước khi nộp.
+
+Bảng~\ref{tab:plan} bố trí khảo sát ở tuần 2--3 và phát triển song song với N02. Các đầu ra đều là dự kiến, chưa hoàn thành.
+\begingroup\tblfont
+\begin{longtable}{L{1.8cm}L{4.1cm}L{4.1cm}L{3.7cm}}
+\caption{Công việc, người phụ trách và đầu ra theo tuần năm 2026}\label{tab:plan}\\
+\toprule Tuần / ngày & Kiên phụ trách & Khanh phụ trách & Đầu ra chung\\\midrule\endfirsthead
+\toprule Tuần / ngày & Kiên phụ trách & Khanh phụ trách & Đầu ra chung\\\midrule\endhead
+W01\newline28/09--04/10 & Đặc tả, sơ đồ khối; trao đổi phiên bản với N02. & KPI/cách đo; danh mục mượn, phân công. & PDF M0, điểm cần xác nhận; nộp 05/10.\\
+W02\newline05/10--11/10 & Đọc OF/EKF; thử tích hợp SITL tối thiểu. & Khảo sát cảm biến, sản phẩm và nghiên cứu trong nước; khảo sát GT. & Phiếu đọc tài liệu; nhật ký cài đặt; ứng viên BOM.\\
+W03\newline12/10--18/10 & Tổng hợp lựa chọn nền tảng; kiểm luồng flow/range. & Bảng so sánh ít nhất 8 tài liệu; kiểm chéo nguồn. & M1 nộp 19/10; quyết định cấu hình hoặc ghi rõ blocker.\\
+W04\newline19/10--25/10 & Xác minh tắt GPS fusion, local estimate; baseline hover. & Ghi GT/log, đổi hệ trục, đồng bộ thời gian và kiểm thử công cụ đo. & Log baseline, cấu hình khóa, dữ liệu đo đối chứng.\\
+W05\newline26/10--01/11 & Module giám sát bản đầu; logic waypoint cục bộ. & Kịch bản thử, dữ liệu hiệu chuẩn, kiểm lỗi mất/trễ sensor trong SITL. & Kiểm thử module; ngưỡng đề xuất, chưa tuyên bố cải thiện.\\
+W06\newline02/11--08/11 & Tích hợp module và chạy demo; mô tả giải pháp. & Phân tích log, kiểm cách chạy lại và video. & M2 nộp 09/11: PDF, Git, video 1--3 phút.\\
+W07\newline09/11--15/11 & Sửa lỗi tích hợp; so baseline và module cùng điều kiện. & Nhận thiết bị nếu được duyệt; kiểm nguồn/driver không cánh. & Báo cáo đối chứng SITL; biên bản kiểm thiết bị.\\
+W08\newline16/11--22/11 & Hiệu chuẩn hướng/offset/thời gian; kiểm logic dừng nhiệm vụ. & Hiệu chuẩn GT; RC, an toàn nguồn/động cơ không cánh. & Hồ sơ bench và checklist an toàn; lỗi còn mở.\\
+W09\newline23/11--29/11 & Prototype luồng chính; chốt cấu hình đợt đánh giá. & Kiểm thử lặp, kiểm dữ liệu và chuẩn bị khu bay nếu đủ điều kiện. & M3 nộp 30/11: prototype, Git/video, danh sách lỗi.\\
+W10\newline30/11--06/12 & Vận hành phần mềm, ghi log khi thử hover có người lái phù hợp. & Thu GT/video, quan sát đo và kiểm checklist cùng người giám sát. & Dữ liệu hover thật nếu qua gate; nếu chưa, báo GVHD và ghi blocker.\\
+W11\newline07/12--13/12 & Đánh giá module/baseline; phân tích nguyên nhân thất bại. & Tổng hợp KPI, độ không chắc chắn GT; waypoint thật chỉ khi an toàn. & M4 nộp 14/12: số liệu, so mục tiêu, nháp báo cáo.\\
+W12\newline14/12--20/12 & Hoàn thiện phân tích; sửa lỗi cần thiết, khóa mã. & Tái hiện trên máy thứ hai; hướng dẫn chạy và kiểm tài liệu. & Báo cáo hoàn chỉnh dự thảo; gói mã/cấu hình/dữ liệu.\\
+W13\newline21/12--27/12 & Hoàn thiện phần thuật toán, slide và luyện trình bày. & Hoàn thiện phần thực nghiệm, video và hồ sơ bàn giao. & M5 nộp 28/12: PDF, slide, video, mã, hướng dẫn.\\
+\bottomrule
+\end{longtable}\endgroup
+
+\subsection{Các mốc nộp và cơ chế phối hợp}
+Hạn nộp đều là 23:59: M0 ngày 05/10; M1 ngày 19/10; M2 ngày 09/11; M3 ngày 30/11; M4 ngày 14/12; M5 ngày 28/12/2026\cite{assignment}. Một thành viên đại diện nộp qua \url{https://forms.gle/vkhZSLVSyV9zHrgx7} bằng tài khoản trường; cả nhóm kiểm tra email xác nhận. Link này thay link cũ bị lỗi theo email GVHD ngày 25/09/2026\cite{formmail}.
+
+Hai thành viên rà soát tiến độ hằng tuần, ghi việc đã làm, bằng chứng, lỗi và việc tuần sau. Bản dùng thử của N02 được tiếp nhận theo thỏa thuận hai nhóm; các mốc nội bộ ở bảng kế hoạch không phải cam kết đã được N02 chấp nhận. Nếu nền dùng chung chưa sẵn sàng, N01 tiếp tục khảo sát, kiểm thử module và môi trường tối thiểu độc lập, rồi đối chiếu cấu hình khi tích hợp.
+
+\section{Rủi ro và các điểm cần xác nhận}
+\begingroup\tblfont
+\begin{longtable}{L{3.3cm}L{6.3cm}L{4.1cm}}
+\caption{Rủi ro, phương án xử lý và người theo dõi}\\
+\toprule Rủi ro & Cách xử lý / giới hạn kết luận & Phụ trách\\\midrule\endfirsthead
+\toprule Rủi ro & Cách xử lý / giới hạn kết luận & Phụ trách\\\midrule\endhead
+Phiên bản/model không tương thích & Thử tích hợp sớm; lưu commit và lỗi; dùng cấu hình tối thiểu tái hiện được, không nâng bản giữa đợt đo. & Kiên; phối hợp N02.\\
+Dữ liệu flow mô phỏng không phản ánh ảnh & Kiểm mã plugin. Chỉ thử texture/ánh sáng khi có luồng tính từ ảnh; còn lại ghi là thử lỗi tín hiệu. & Kiên.\\
+Drift, range lỗi, yaw/offset sai & Hiệu chuẩn, kiểm bề mặt/vùng đo; không bỏ gate để ép bay; định lượng giới hạn 30~s. & Kiên và Khanh.\\
+GT sai hệ trục, trễ hoặc thị sai & Kiểm bằng dịch chuyển biết trước; đánh giá sai số đo; giữ dữ liệu thô và không che khoảng mất GT. & Khanh.\\
+Thiếu thiết bị hoặc người lái/khu bay & Xin mượn và xác nhận lịch sớm; báo GVHD trước khi ảnh hưởng M3/M4; không tự đổi nghiệm thu thật thành SITL. & Khanh; cả nhóm báo GVHD.\\
+Module không hơn baseline & Giữ bộ đối chứng, báo cả kết quả âm; ưu tiên giải thích dữ liệu thay vì thêm phạm vi mới. & Kiên; Khanh kiểm chéo.\\
+Phạm vi vượt CE201 & Chỉ một nền tảng và một module thử nghiệm; chưa đưa ROS 2/SLAM/AI vào đường bắt buộc. & Cả nhóm.\\
+\bottomrule
+\end{longtable}\endgroup
+
+Trước khi nộp, nhóm cần xác nhận: (1) phân công Kiên/Khanh; (2) cách diễn giải sai số $\pm0{,}5$~m và protocol waypoint; (3) phạm vi đóng góp của bộ giám sát; (4) thiết bị, người giám sát và khu bay; (5) phiên bản cùng giao diện N02. Những mục này cụ thể hóa cách thực hiện, không thay tên hay hướng đề tài đã giao. Nếu đề nghị thay phạm vi/tiêu chí của GVHD, nhóm phản hồi trong chuỗi email với mã [N01] trước hạn 23:59 ngày 30/09/2026\cite{assignment}.
+
+\clearpage
+\addcontentsline{toc}{section}{Tài liệu tham khảo}
+\begingroup\setstretch{1.08}\fontsize{13}{16}\selectfont
+\begin{thebibliography}{99}
+\bibitem{assignment} N. D. X. Bách, \textit{Đồ án 1–2 HK1 2026–2027: Mô tả đề tài và kế hoạch thực hiện}, tài liệu GVHD gửi email 25/09/2026, tr. 1–3. Tệp: \code{MoTa\_DeTai\_DoAn\_HK1\_2026-2027.pdf}.
+\bibitem{n02mail} L. V. Q. Lĩnh, "Re: [Đồ án] Trao đổi phối hợp môi trường mô phỏng SITL cho Drone," email gửi P. C. Kiên và H. N. Khanh, 28/09/2026, 17:29 (UTC+7).
+\bibitem{flow} PX4 Development Team, "Optical Flow," \textit{PX4 User Guide}, nhánh main. [Trực tuyến]. \url{https://docs.px4.io/main/en/sensor/optical_flow.html}. Truy cập: 29/09/2026.
+\bibitem{ekf} PX4 Development Team, "Using PX4's Navigation Filter (EKF2)," \textit{PX4 User Guide}, nhánh main. [Trực tuyến]. \url{https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf.html}. Truy cập: 29/09/2026.
+\bibitem{airframe} PX4 Development Team, "4021\_gz\_x500\_flow," \textit{PX4-Autopilot}, v1.16.0, mã cấu hình airframe. [Trực tuyến]. \url{https://github.com/PX4/PX4-Autopilot/blob/v1.16.0/ROMFS/px4fmu_common/init.d-posix/airframes/4021_gz_x500_flow}. Truy cập: 29/09/2026.
+\bibitem{bridge} PX4 Development Team, "GZBridge.cpp," \textit{PX4-Autopilot}, nhánh main. [Trực tuyến]. \url{https://github.com/PX4/PX4-Autopilot/blob/main/src/modules/simulation/gz_bridge/GZBridge.cpp}. Truy cập: 29/09/2026.
+\bibitem{sdk} MAVSDK Developers, "telemetry.py," \textit{MAVSDK-Python}, nhánh main. [Trực tuyến]. \url{https://github.com/mavlink/MAVSDK-Python/blob/main/mavsdk/telemetry.py}. Truy cập: 29/09/2026.
+\bibitem{offboard} PX4 Development Team, "Offboard Mode," \textit{PX4 User Guide}, nhánh main. [Trực tuyến]. \url{https://docs.px4.io/main/en/flight_modes/offboard.html}. Truy cập: 29/09/2026.
+\bibitem{gageik} N. Gageik, M. Strohmeier, và S. Montenegro, "An Autonomous UAV with an Optical Flow Sensor for Positioning and Navigation," \textit{International Journal of Advanced Robotic Systems}, vol. 10, no. 10, 2013, doi: \href{https://doi.org/10.5772/56813}{10.5772/56813}.
+\bibitem{wang} R. Wang, D. Zou, C. Xu, L. Pei, P. Liu, và W. Yu, "An aerodynamic model-aided state estimator for multi-rotor UAVs," trong \textit{Proc. IEEE/RSJ IROS}, 2017, tr. 2164–2170, doi: \href{https://doi.org/10.1109/IROS.2017.8206034}{10.1109/IROS.2017.8206034}.
+\bibitem{honegger} D. Honegger, L. Meier, P. Tanskanen, và M. Pollefeys, "An open source and open hardware embedded metric optical flow CMOS camera for indoor and outdoor applications," trong \textit{Proc. IEEE ICRA}, 2013, tr. 1736–1741, doi: \href{https://doi.org/10.1109/ICRA.2013.6630805}{10.1109/ICRA.2013.6630805}.
+\bibitem{grabe} V. Grabe, H. H. Bülthoff, D. Scaramuzza, và P. R. Giordano, "Nonlinear ego-motion estimation from optical flow for online control of a quadrotor UAV," \textit{The International Journal of Robotics Research}, vol. 34, no. 8, tr. 1114–1135, 2015, doi: \href{https://doi.org/10.1177/0278364915578646}{10.1177/0278364915578646}.
+\bibitem{vn} M.-T. Nguyen et al., "Stabilzation Position of Quadcopter Using Vision-Based Corner Detector from Top-Down Footage of Camera," \textit{Journal of Technical Education Science}, số 71A, tr. 18–27, 2022, doi: \href{https://doi.org/10.54644/jte.71A.2022.1132}{10.54644/jte.71A.2022.1132}. [Trực tuyến]. \url{https://jte.edu.vn/index.php/jte/article/view/1132}.
+\bibitem{ark} PX4 Development Team, "ARK Flow," \textit{PX4 User Guide}, mô tả sản phẩm thương mại. [Trực tuyến]. \url{https://docs.px4.io/main/en/dronecan/ark_flow.html}. Truy cập: 29/09/2026.
+\bibitem{formmail} N. D. X. Bách, "Re: Đồ án 1-2 HK1 2026-2027," email đính chính link nộp báo cáo, 25/09/2026, 05:10 (UTC+7).
+\end{thebibliography}
+\endgroup
+\end{document}

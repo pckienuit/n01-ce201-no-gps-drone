@@ -1,0 +1,25 @@
+{
+  "run_id": "20261108_111139",
+  "timestamp": "2026-11-08T11:12:45.938404",
+  "target_altitude_m": 1.0,
+  "hover_duration_requested_s": 30.0,
+  "hover_duration_actual_s": 29.97,
+  "samples_count": 581,
+  "abort_reason": null,
+  "kpi_target_max_horizontal_error_m": 0.5,
+  "telemetry_metrics": {
+    "max_horizontal_error_m": 0.219,
+    "rmse_horizontal_error_m": 0.0644,
+    "p95_horizontal_error_m": 0.1656,
+    "mean_horizontal_error_m": 0.0473,
+    "max_vertical_error_m": 0.1994,
+    "rmse_vertical_error_m": 0.064
+  },
+  "kpi_result": "PASS",
+  "ground_truth_metrics": {
+    "gt_samples": 3776,
+    "est_samples": 9457,
+    "max_hold_error_gt_m": 0.3615,
+    "mean_hold_error_gt_m": 0.0428
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "run_id": "20261107_102851",
+  "test_name": "companion_link_loss_fault_injection",
+  "altitude_at_fault_m": 1.0,
+  "failsafe_mode_triggered": false,
+  "safe_disarm_on_ground": false,
+  "test_result": "FAIL",
+  "state_transitions": [
+    {
+      "elapsed_s": 0.5,
+      "nav_state": "OFFBOARD",
+      "arming_state": "ARMED",
+      "z_m": 0.339,
+      "vz_m_s": -0.023
+    },
+    {
+      "elapsed_s": 1.02,
+      "nav_state": "OFFBOARD",
+      "arming_state": "ARMED",
+      "z_m": 0.345,
+      "vz_m_s": -0.039
+    },
+    {
+      "elapsed_s": 1.55,
+      "nav_state": "OFFBOARD",
+      "arming_state": "ARMED",
+      "z_m": 0.345,
+      "vz_m_s": -0.157
+    },
+    {
+      "elapsed_s": 2.07,
+      "nav_state": "OFFBOARD",
+      "arming_state": "ARMED",
+      "z_m": 0.267,
+      "vz_m_s": -0.635
+    },
+    {
+      "elapsed_s": 2.59,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.117,
+      "vz_m_s": -0.571
+    },
+    {
+      "elapsed_s": 3.11,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.038,
+      "vz_m_s": -0.135
+    },
+    {
+      "elapsed_s": 3.63,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.054,
+      "vz_m_s": 0.376
+    },
+    {
+      "elapsed_s": 4.15,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.14,
+      "vz_m_s": 0.553
+    },
+    {
+      "elapsed_s": 4.68,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.228,
+      "vz_m_s": 0.473
+    },
+    {
+      "elapsed_s": 5.19,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.299,
+      "vz_m_s": 0.372
+    },
+    {
+      "elapsed_s": 5.71,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.326,
+      "vz_m_s": -0.058
+    },
+    {
+      "elapsed_s": 6.24,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.306,
+      "vz_m_s": -0.064
+    },
+    {
+      "elapsed_s": 6.76,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.291,
+      "vz_m_s": -0.066
+    },
+    {
+      "elapsed_s": 7.28,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.281,
+      "vz_m_s": -0.062
+    },
+    {
+      "elapsed_s": 7.81,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.278,
+      "vz_m_s": -0.055
+    },
+    {
+      "elapsed_s": 8.33,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.28,
+      "vz_m_s": -0.045
+    },
+    {
+      "elapsed_s": 8.85,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.286,
+      "vz_m_s": -0.035
+    },
+    {
+      "elapsed_s": 9.37,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.294,
+      "vz_m_s": -0.025
+    },
+    {
+      "elapsed_s": 9.89,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.302,
+      "vz_m_s": -0.017
+    },
+    {
+      "elapsed_s": 10.42,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.309,
+      "vz_m_s": -0.01
+    },
+    {
+      "elapsed_s": 10.94,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.315,
+      "vz_m_s": -0.005
+    },
+    {
+      "elapsed_s": 11.47,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.32,
+      "vz_m_s": -0.001
+    },
+    {
+      "elapsed_s": 11.99,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.324,
+      "vz_m_s": 0.002
+    },
+    {
+      "elapsed_s": 12.51,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.327,
+      "vz_m_s": 0.003
+    },
+    {
+      "elapsed_s": 13.03,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.329,
+      "vz_m_s": 0.004
+    },
+    {
+      "elapsed_s": 13.55,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.33,
+      "vz_m_s": 0.005
+    },
+    {
+      "elapsed_s": 14.06,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.331,
+      "vz_m_s": 0.005
+    },
+    {
+      "elapsed_s": 14.59,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.331,
+      "vz_m_s": 0.005
+    },
+    {
+      "elapsed_s": 15.1,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.331,
+      "vz_m_s": 0.004
+    },
+    {
+      "elapsed_s": 15.62,
+      "nav_state": "STATE_18",
+      "arming_state": "ARMED",
+      "z_m": 0.331,
+      "vz_m_s": 0.004
+    }
+  ]
+}

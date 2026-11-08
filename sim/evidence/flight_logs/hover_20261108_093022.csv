@@ -1,0 +1,2 @@
+t_rel_s,sp_x,sp_y,sp_z,est_x,est_y,est_z,est_vx,est_vy,est_vz,err_xy,err_z
+0.0,0.0,0.0,-1.0,-0.0051,0.0059,0.3905,0.0173,0.0174,0.0001,0.0078,1.3905

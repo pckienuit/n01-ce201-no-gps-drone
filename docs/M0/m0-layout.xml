@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="24.02.0">
+<page number="1" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="0" size="22" family="GDJGUI+TimesNewRomanPSMT" color="#000000"/>
+	<fontspec id="1" size="22" family="EFDIQF+TimesNewRomanPS" color="#000000"/>
+	<fontspec id="2" size="26" family="EFDIQF+TimesNewRomanPS" color="#000000"/>
+	<fontspec id="3" size="31" family="EFDIQF+TimesNewRomanPS" color="#000000"/>
+	<fontspec id="4" size="19" family="GDJGUI+TimesNewRomanPSMT" color="#000000"/>
+<text top="132" left="243" width="470" height="20" font="0">ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH</text>
+<text top="170" left="259" width="439" height="20" font="0">TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</text>
+<text top="208" left="327" width="302" height="19" font="1"><b>KHOA KỸ THUẬT MÁY TÍNH</b></text>
+<text top="323" left="382" width="193" height="23" font="2"><b>ĐẶC TẢ ĐỀ TÀI</b></text>
+<text top="368" left="330" width="297" height="23" font="2"><b>VÀ KẾ HOẠCH 13 TUẦN</b></text>
+<text top="425" left="358" width="241" height="20" font="0">Mốc M0 • Đồ án 1 (CE201)</text>
+<text top="463" left="346" width="265" height="20" font="0">Học kỳ 1, năm học 2026–2027</text>
+<text top="559" left="275" width="407" height="28" font="3"><b>PHÁT TRIỂN THUẬT TOÁN</b></text>
+<text top="610" left="251" width="455" height="28" font="3"><b>BAY KHÔNG GPS CHO DRONE</b></text>
+<text top="696" left="430" width="96" height="20" font="0">Nhóm N01</text>
+<text top="746" left="263" width="179" height="18" font="4">Giảng viên hướng dẫn:</text>
+<text top="746" left="460" width="234" height="18" font="4">ThS. Nguyễn Duy Xuân Bách</text>
+<text top="783" left="263" width="157" height="18" font="4">Sinh viên thực hiện:</text>
+<text top="783" left="460" width="114" height="18" font="4">Phan Chí Kiên</text>
+<text top="783" left="599" width="78" height="18" font="4">23520804</text>
+<text top="813" left="460" width="123" height="18" font="4">Hồ Nhật Khanh</text>
+<text top="813" left="607" width="78" height="18" font="4">23520716</text>
+<text top="1071" left="312" width="333" height="18" font="4">Bản dự thảo để nhóm rà soát trước khi nộp</text>
+<text top="1101" left="275" width="406" height="18" font="4">Ngày lập: 29/09/2026 • Hạn M0: 23:59, 05/10/2026</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="5" size="19" family="EFDIQF+TimesNewRomanPS" color="#000000"/>
+<text top="128" left="149" width="90" height="23" font="2"><b>Mục lục</b></text>
+<text top="181" left="149" width="66" height="17" font="5"><a href="m0-layout.html#3"><b>Tóm tắt</b></a></text>
+<text top="181" left="798" width="10" height="17" font="5"><b>1</b></text>
+<text top="229" left="149" width="10" height="17" font="5"><a href="m0-layout.html#3"><b>1</b></a></text>
+<text top="229" left="178" width="220" height="17" font="5"><a href="m0-layout.html#3"><b>Thông tin và căn cứ đặc tả</b></a></text>
+<text top="229" left="798" width="10" height="17" font="5"><b>1</b></text>
+<text top="257" left="178" width="24" height="18" font="4"><a href="m0-layout.html#3">1.1</a></text>
+<text top="257" left="223" width="233" height="18" font="4"><a href="m0-layout.html#3">Tên đề tài và hướng thực hiện</a></text>
+<text top="257" left="474" width="296" height="18" font="4">. . . . . . . . . . . . . . . . . . . . .</text>
+<text top="257" left="798" width="10" height="18" font="4">1</text>
+<text top="285" left="178" width="24" height="18" font="4"><a href="m0-layout.html#4">1.2</a></text>
+<text top="285" left="223" width="548" height="18" font="4"><a href="m0-layout.html#4">Hiện trạng phối hợp với N02 </a>. . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="285" left="798" width="10" height="18" font="4">2</text>
+<text top="333" left="149" width="10" height="17" font="5"><a href="m0-layout.html#4"><b>2</b></a></text>
+<text top="333" left="178" width="248" height="17" font="5"><a href="m0-layout.html#4"><b>Bài toán, mục tiêu và phạm vi</b></a></text>
+<text top="333" left="798" width="10" height="17" font="5"><b>2</b></text>
+<text top="361" left="178" width="24" height="18" font="4"><a href="m0-layout.html#4">2.1</a></text>
+<text top="361" left="223" width="548" height="18" font="4"><a href="m0-layout.html#4">Bài toán kỹ thuật </a>. . . . . . . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="361" left="798" width="10" height="18" font="4">2</text>
+<text top="390" left="178" width="24" height="18" font="4"><a href="m0-layout.html#4">2.2</a></text>
+<text top="390" left="223" width="548" height="18" font="4"><a href="m0-layout.html#4">Mục tiêu </a>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="390" left="798" width="10" height="18" font="4">2</text>
+<text top="418" left="178" width="24" height="18" font="4"><a href="m0-layout.html#5">2.3</a></text>
+<text top="418" left="223" width="548" height="18" font="4"><a href="m0-layout.html#5">Phạm vi thực hiện và loại trừ </a>. . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="418" left="798" width="10" height="18" font="4">3</text>
+<text top="466" left="149" width="10" height="17" font="5"><a href="m0-layout.html#5"><b>3</b></a></text>
+<text top="466" left="178" width="314" height="17" font="5"><a href="m0-layout.html#5"><b>Đầu vào, đầu ra và kiến trúc hệ thống</b></a></text>
+<text top="466" left="798" width="10" height="17" font="5"><b>3</b></text>
+<text top="494" left="178" width="24" height="18" font="4"><a href="m0-layout.html#5">3.1</a></text>
+<text top="494" left="223" width="548" height="18" font="4"><a href="m0-layout.html#5">Đầu vào và đầu ra </a>. . . . . . . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="494" left="798" width="10" height="18" font="4">3</text>
+<text top="523" left="178" width="24" height="18" font="4"><a href="m0-layout.html#6">3.2</a></text>
+<text top="523" left="223" width="548" height="18" font="4"><a href="m0-layout.html#6">Sơ đồ khối </a>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="523" left="798" width="10" height="18" font="4">4</text>
+<text top="551" left="178" width="24" height="18" font="4"><a href="m0-layout.html#6">3.3</a></text>
+<text top="551" left="223" width="548" height="18" font="4"><a href="m0-layout.html#6">Lựa chọn nền tảng và giao diện với N02 </a>. . . . . . . . . . . . . . . .</text>
+<text top="551" left="798" width="10" height="18" font="4">4</text>
+<text top="599" left="149" width="10" height="17" font="5"><a href="m0-layout.html#8"><b>4</b></a></text>
+<text top="599" left="178" width="326" height="17" font="5"><a href="m0-layout.html#8"><b>Giải pháp đề xuất và kế hoạch khảo sát</b></a></text>
+<text top="599" left="798" width="10" height="17" font="5"><b>6</b></text>
+<text top="627" left="178" width="24" height="18" font="4"><a href="m0-layout.html#8">4.1</a></text>
+<text top="627" left="223" width="548" height="18" font="4"><a href="m0-layout.html#8">Phần có sẵn và phần nhóm thực hiện </a>. . . . . . . . . . . . . . . . . .</text>
+<text top="627" left="798" width="10" height="18" font="4">6</text>
+<text top="656" left="178" width="24" height="18" font="4"><a href="m0-layout.html#9">4.2</a></text>
+<text top="656" left="223" width="548" height="18" font="4"><a href="m0-layout.html#9">Danh mục khảo sát dự kiến </a>. . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="656" left="798" width="10" height="18" font="4">7</text>
+<text top="704" left="149" width="10" height="17" font="5"><a href="m0-layout.html#10"><b>5</b></a></text>
+<text top="704" left="178" width="265" height="17" font="5"><a href="m0-layout.html#10"><b>Tiêu chí đạt và phương pháp đo</b></a></text>
+<text top="704" left="798" width="10" height="17" font="5"><b>8</b></text>
+<text top="732" left="178" width="24" height="18" font="4"><a href="m0-layout.html#10">5.1</a></text>
+<text top="732" left="223" width="548" height="18" font="4"><a href="m0-layout.html#10">Yêu cầu gốc và diễn giải đề xuất </a>. . . . . . . . . . . . . . . . . . . .</text>
+<text top="732" left="798" width="10" height="18" font="4">8</text>
+<text top="760" left="178" width="24" height="18" font="4"><a href="m0-layout.html#10">5.2</a></text>
+<text top="760" left="223" width="548" height="18" font="4"><a href="m0-layout.html#10">Hai loại sai số </a>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="760" left="798" width="10" height="18" font="4">8</text>
+<text top="789" left="178" width="24" height="18" font="4"><a href="m0-layout.html#11">5.3</a></text>
+<text top="789" left="223" width="548" height="18" font="4"><a href="m0-layout.html#11">Quy trình đo dự kiến </a>. . . . . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="789" left="798" width="10" height="18" font="4">9</text>
+<text top="837" left="149" width="10" height="17" font="5"><a href="m0-layout.html#12"><b>6</b></a></text>
+<text top="837" left="178" width="254" height="17" font="5"><a href="m0-layout.html#12"><b>Thiết bị, phần mềm và an toàn</b></a></text>
+<text top="837" left="788" width="19" height="17" font="5"><b>10</b></text>
+<text top="865" left="178" width="24" height="18" font="4"><a href="m0-layout.html#12">6.1</a></text>
+<text top="865" left="223" width="548" height="18" font="4"><a href="m0-layout.html#12">Danh mục dự kiến mượn và xác minh </a>. . . . . . . . . . . . . . . . .</text>
+<text top="865" left="788" width="19" height="18" font="4">10</text>
+<text top="893" left="178" width="24" height="18" font="4"><a href="m0-layout.html#13">6.2</a></text>
+<text top="893" left="223" width="205" height="18" font="4"><a href="m0-layout.html#13">Các bước kiểm tra an toàn</a></text>
+<text top="893" left="445" width="325" height="18" font="4">. . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="893" left="789" width="19" height="18" font="4">11</text>
+<text top="941" left="149" width="10" height="17" font="5"><a href="m0-layout.html#13"><b>7</b></a></text>
+<text top="941" left="178" width="260" height="17" font="5"><a href="m0-layout.html#13"><b>Kế hoạch 13 tuần và phân công</b></a></text>
+<text top="941" left="790" width="18" height="17" font="5"><b>11</b></text>
+<text top="969" left="178" width="24" height="18" font="4"><a href="m0-layout.html#13">7.1</a></text>
+<text top="969" left="223" width="145" height="18" font="4"><a href="m0-layout.html#13">Phân công dự kiến</a></text>
+<text top="969" left="387" width="384" height="18" font="4">. . . . . . . . . . . . . . . . . . . . . . . . . . .</text>
+<text top="969" left="789" width="19" height="18" font="4">11</text>
+<text top="998" left="178" width="24" height="18" font="4"><a href="m0-layout.html#15">7.2</a></text>
+<text top="998" left="223" width="548" height="18" font="4"><a href="m0-layout.html#15">Các mốc nộp và cơ chế phối hợp </a>. . . . . . . . . . . . . . . . . . . .</text>
+<text top="998" left="788" width="19" height="18" font="4">13</text>
+<text top="1046" left="149" width="10" height="17" font="5"><a href="m0-layout.html#15"><b>8</b></a></text>
+<text top="1046" left="178" width="269" height="17" font="5"><a href="m0-layout.html#15"><b>Rủi ro và các điểm cần xác nhận</b></a></text>
+<text top="1046" left="788" width="19" height="17" font="5"><b>13</b></text>
+<text top="1094" left="149" width="157" height="17" font="5"><a href="m0-layout.html#16"><b>Tài liệu tham khảo</b></a></text>
+<text top="1094" left="788" width="19" height="17" font="5"><b>15</b></text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="133" left="149" width="88" height="23" font="2"><b>Tóm tắt</b></text>
+<text top="191" left="149" width="659" height="18" font="4">Đề tài khảo sát và đề xuất cách giữ vị trí, bay theo điểm trong nhà cho drone bốn</text>
+<text top="221" left="149" width="659" height="18" font="4">cánh khi không có GPS. Hệ thống dự kiến kết hợp dữ liệu quán tính, cảm biến dòng</text>
+<text top="251" left="149" width="659" height="18" font="4">quang học (optical flow) hướng xuống và cảm biến khoảng cách trong bộ lọc Kalman</text>
+<text top="280" left="149" width="659" height="18" font="4">mở rộng của PX4. Nhóm kiểm chứng trên mô phỏng trước, sau đó thử giữ vị trí thật</text>
+<text top="310" left="149" width="659" height="18" font="4">ở độ cao thấp trong khu vực có bảo hộ theo yêu cầu N01 của giảng viên hướng dẫn</text>
+<text top="340" left="149" width="97" height="18" font="4"><a href="m0-layout.html#17">(GVHD)[1</a>].</text>
+<text top="374" left="191" width="617" height="18" font="4">Trong CE201, nhóm tập trung khảo sát, lựa chọn giải pháp, hiện thực thử nghiệm</text>
+<text top="403" left="149" width="659" height="18" font="4">và đánh giá bằng số liệu, không viết lại EKF2 từ đầu. Phần việc dự kiến gồm cấu hình</text>
+<text top="433" left="149" width="659" height="18" font="4">và kiểm chứng luồng ước lượng không GPS, xây dựng chương trình bay cục bộ, thử</text>
+<text top="463" left="149" width="659" height="18" font="4">nghiệm một bộ giám sát nhiệm vụ và xây dựng quy trình đo sai số độc lập. Bộ giám</text>
+<text top="492" left="149" width="543" height="18" font="4">sát là đề xuất kỹ thuật để GVHD xem xét, chưa được phê duyệt riêng.</text>
+<text top="527" left="191" width="617" height="18" font="4">Tại thời điểm lập đặc tả, N01 đã có tài liệu khảo sát và trao đổi với N02, nhưng</text>
+<text top="556" left="149" width="659" height="18" font="4">chưa chạy SITL, chưa kiểm tra cảm biến trên bàn và chưa bay thật. Các ngưỡng thử</text>
+<text top="586" left="149" width="659" height="18" font="4">nghiệm và phân công trong báo cáo là kế hoạch đề xuất, không phải kết quả thực</text>
+<text top="616" left="149" width="63" height="18" font="4">nghiệm.</text>
+<text top="687" left="149" width="13" height="23" font="2"><b>1</b></text>
+<text top="687" left="188" width="292" height="23" font="2"><b>Thông tin và căn cứ đặc tả</b></text>
+<text top="748" left="149" width="27" height="19" font="1"><b>1.1</b></text>
+<text top="748" left="197" width="276" height="19" font="1"><b>Tên đề tài và hướng thực hiện</b></text>
+<text top="796" left="149" width="179" height="18" font="4">Tên đề tài giữ nguyên:</text>
+<text top="797" left="335" width="405" height="17" font="5"><b>Phát triển thuật toán bay không GPS cho Drone</b></text>
+<text top="796" left="740" width="68" height="18" font="4">. Hướng</text>
+<text top="826" left="149" width="659" height="18" font="4">thực hiện: giữ vị trí và bay waypoint trong nhà bằng optical flow, cảm biến khoảng</text>
+<text top="856" left="149" width="659" height="18" font="4">cách và EKF; kiểm chứng trên SITL trước khi bay thật. SITL (Software-in-the-Loop)</text>
+<text top="885" left="149" width="659" height="18" font="4">là hình thức chạy firmware điều khiển bay trên máy tính, nối với mô hình vật lý drone</text>
+<text top="915" left="149" width="171" height="18" font="4">trong trình mô phỏng.</text>
+<text top="949" left="191" width="617" height="18" font="4">Báo cáo bám theo tài liệu GVHD gửi ngày 25/09/2026, nhất là yêu cầu M0 và</text>
+<text top="979" left="149" width="314" height="18" font="4">các mốc M1–M5[<a href="m0-layout.html#17">1</a>]. Kế hoạch áp dụng</text>
+<text top="979" left="468" width="272" height="17" font="5"><b>13 tuần, từ 28/09 đến 27/12/2026</b></text>
+<text top="979" left="740" width="68" height="18" font="4">, thay kế</text>
+<text top="1009" left="149" width="659" height="18" font="4">hoạch nội bộ 15 tuần trước đây. Lịch bảo vệ do Khoa/GVHD thông báo riêng, không</text>
+<text top="1038" left="149" width="188" height="18" font="4">nhất thiết trùng hạn M5.</text>
+<text top="1145" left="473" width="10" height="18" font="4">1</text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="149" width="27" height="19" font="1"><b>1.2</b></text>
+<text top="132" left="197" width="264" height="19" font="1"><b>Hiện trạng phối hợp với N02</b></text>
+<text top="180" left="149" width="659" height="18" font="4">Email của Lâm Vương Quốc Lĩnh ngày 28/09/2026 cho biết N02 định hướng PX4-</text>
+<text top="210" left="149" width="659" height="18" font="4">Autopilot, Gazebo Harmonic (gz-sim 8.11.0), Ubuntu 24.04.4 LTS, Python 3.12 và</text>
+<text top="240" left="149" width="659" height="18" font="4">MAVSDK-Python; ROS 2 mới ở mức dự kiến khảo sát. N02 dùng X500 làm mô hình</text>
+<text top="269" left="149" width="525" height="18" font="4">cơ sở, chưa chốt cấu hình optical flow và cảm biến khoảng <a href="m0-layout.html#17">cách[2].</a></text>
+<text top="304" left="191" width="617" height="18" font="4">Nhóm ưu tiên đồng bộ với cấu hình này nhưng chưa kiểm chứng trên máy N01.</text>
+<text top="333" left="149" width="659" height="18" font="4">Phiên bản/commit PX4, phiên bản MAVSDK, mô hình cảm biến, cách lấy dữ liệu</text>
+<text top="363" left="149" width="659" height="18" font="4">chuẩn và ngày bàn giao bản dùng thử còn cần hai nhóm thống nhất. Ubuntu 24.04.4</text>
+<text top="393" left="149" width="659" height="18" font="4">khác bản 22.04 nêu trong mô tả N02; cần ghi nhận khác biệt và xác nhận trước, không</text>
+<text top="422" left="149" width="374" height="18" font="4">mặc định mọi tổ hợp phiên bản đều tương thích.</text>
+<text top="493" left="149" width="13" height="23" font="2"><b>2</b></text>
+<text top="493" left="188" width="329" height="23" font="2"><b>Bài toán, mục tiêu và phạm vi</b></text>
+<text top="554" left="149" width="27" height="19" font="1"><b>2.1</b></text>
+<text top="554" left="197" width="160" height="19" font="1"><b>Bài toán kỹ thuật</b></text>
+<text top="602" left="149" width="659" height="18" font="4">Khi không có GPS, drone cần một nguồn quan sát chuyển động ngang để hạn chế trôi</text>
+<text top="632" left="149" width="659" height="18" font="4">vị trí. Optical flow quan sát chuyển động ảnh của mặt sàn; dữ liệu khoảng cách cung</text>
+<text top="662" left="149" width="659" height="18" font="4">cấp tỷ lệ để quy đổi chuyển động góc thành đơn vị mét. IMU hỗ trợ dự đoán trạng</text>
+<text top="691" left="149" width="659" height="18" font="4">thái và bù ảnh hưởng <a href="m0-layout.html#17">quay[3</a>, <a href="m0-layout.html#17">4]. </a>Tuy nhiên, vị trí ngang vẫn có thể trôi theo thời gian;</text>
+<text top="721" left="149" width="648" height="18" font="4">cấu hình này không tương đương một hệ định vị tuyệt đối trong toàn bộ căn phòng.</text>
+<text top="755" left="191" width="617" height="18" font="4">Điều kiện làm việc dự kiến: không gian trong nhà, mặt sàn gần phẳng, có hoa</text>
+<text top="785" left="149" width="659" height="18" font="4">văn và đủ ánh sáng; cảm biến hướng xuống nằm trong vùng đo hợp lệ. Hướng thân</text>
+<text top="814" left="149" width="659" height="18" font="4">(yaw) và hiệu chuẩn cảm biến cũng ảnh hưởng phép đổi vận tốc từ hệ thân sang hệ</text>
+<text top="844" left="149" width="484" height="18" font="4">cục bộ. Nhóm cần kiểm tra các giả thiết này trước mỗi đợt đo.</text>
+<text top="908" left="149" width="27" height="19" font="1"><b>2.2</b></text>
+<text top="908" left="197" width="82" height="19" font="1"><b>Mục tiêu</b></text>
+<text top="952" left="154" width="653" height="18" font="4">1. Khảo sát giải pháp, sản phẩm và nghiên cứu trong/ngoài nước; lập bảng so sánh</text>
+<text top="982" left="178" width="352" height="18" font="4">có trích dẫn, chọn cấu hình phù hợp với N01.</text>
+<text top="1012" left="154" width="653" height="18" font="4">2. Nắm rõ luồng IMU–optical flow–range–EKF2, kiểm tra hệ thống có ước lượng</text>
+<text top="1041" left="178" width="306" height="18" font="4">cục bộ hợp lệ khi không hợp nhất GPS.</text>
+<text top="1071" left="154" width="654" height="18" font="4">3. Chạy giữ vị trí và bay hình vuông trên SITL; lưu dữ liệu cảm biến, trạng thái ước</text>
+<text top="1101" left="178" width="323" height="18" font="4">lượng, điểm đặt và dữ liệu chuẩn độc lập.</text>
+<text top="1145" left="473" width="10" height="18" font="4">2</text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="154" width="654" height="18" font="4">4. Hiện thực và đánh giá bộ giám sát nhiệm vụ ở mức module; không nhận phần</text>
+<text top="162" left="178" width="510" height="18" font="4">EKF2 hoặc bộ điều khiển có sẵn là thuật toán do nhóm phát triển.</text>
+<text top="191" left="154" width="654" height="18" font="4">5. Tích hợp phần cứng và thử giữ vị trí thấp có bảo hộ sau khi đạt các bước kiểm tra</text>
+<text top="221" left="178" width="390" height="18" font="4">an toàn; báo cáo sai số cùng giới hạn của phép đo.</text>
+<text top="286" left="149" width="27" height="19" font="1"><b>2.3</b></text>
+<text top="286" left="197" width="269" height="19" font="1"><b>Phạm vi thực hiện và loại trừ</b></text>
+<text top="335" left="149" width="93" height="17" font="5"><b>Thực hiện:</b></text>
+<text top="334" left="252" width="556" height="18" font="4">khảo sát; cấu hình một nền PX4; thử nghiệm mô phỏng không GPS;</text>
+<text top="364" left="149" width="659" height="18" font="4">chương trình waypoint cục bộ; ghi và phân tích log; thử lỗi cảm biến/liên lạc trong</text>
+<text top="394" left="149" width="659" height="18" font="4">SITL; kiểm tra phần cứng không cánh; giữ vị trí thật có bảo hộ. Bài hình vuông thật</text>
+<text top="423" left="149" width="443" height="18" font="4">chỉ thực hiện sau khi hover đạt và có khu bay đủ an toàn.</text>
+<text top="458" left="191" width="257" height="17" font="5"><b>Không thực hiện trong CE201:</b></text>
+<text top="458" left="455" width="353" height="18" font="4">viết lại EKF từ đầu; phát triển đồng thời PX4</text>
+<text top="487" left="149" width="659" height="18" font="4">và ArduPilot; SLAM/VIO đầy đủ; tránh vật cản tự động; nhận diện cây trồng hoặc</text>
+<text top="517" left="149" width="659" height="18" font="4">sâu bệnh; thiết kế flight controller mới; bay ngoài trời hay vận hành không giám sát.</text>
+<text top="547" left="149" width="659" height="18" font="4">CE206 có thể kế thừa cấu hình, mã và quy trình đo; chưa cam kết một ứng dụng mở</text>
+<text top="576" left="149" width="92" height="18" font="4">rộng cụ thể.</text>
+<text top="611" left="191" width="177" height="17" font="5"><b>Phương án dự phòng:</b></text>
+<text top="610" left="374" width="434" height="18" font="4">nếu thiếu thiết bị hoặc khu bay an toàn, nhóm báo GVHD</text>
+<text top="640" left="149" width="659" height="18" font="4">sớm để xin điều chỉnh phần nghiệm thu thực tế. Kết quả SITL không tự thay thế yêu</text>
+<text top="670" left="149" width="659" height="18" font="4">cầu thử giữ vị trí thật. Phương án hình vuông trên SITL kết hợp hover thật chỉ có hiệu</text>
+<text top="699" left="149" width="178" height="18" font="4">lực khi GVHD đồng ý.</text>
+<text top="771" left="149" width="13" height="23" font="2"><b>3</b></text>
+<text top="771" left="188" width="417" height="23" font="2"><b>Đầu vào, đầu ra và kiến trúc hệ thống</b></text>
+<text top="832" left="149" width="27" height="19" font="1"><b>3.1</b></text>
+<text top="832" left="197" width="169" height="19" font="1"><b>Đầu vào và đầu ra</b></text>
+<text top="876" left="149" width="659" height="18" font="4">Bảng <a href="m0-layout.html#5">1 </a>mô tả dữ liệu tối thiểu. Tần số nhận thực tế, độ trễ và đơn vị được đo/đối chiếu</text>
+<text top="902" left="149" width="561" height="18" font="4">trên phiên bản khóa, không đặt chung một tần số cho mọi loại cảm biến.</text>
+<text top="942" left="342" width="272" height="18" font="4">Bảng 1: Đầu vào và đầu ra dự kiến</text>
+<text top="997" left="169" width="92" height="18" font="4">Thành phần</text>
+<text top="997" left="315" width="73" height="18" font="4">Nội dung</text>
+<text top="997" left="588" width="145" height="18" font="4">Điều kiện kiểm tra</text>
+<text top="1032" left="169" width="117" height="18" font="4">IMU (đầu vào)</text>
+<text top="1032" left="315" width="244" height="18" font="4">Gia tốc và tốc độ góc, kèm thời</text>
+<text top="1058" left="315" width="238" height="18" font="4">điểm đo; đơn vị theo giao diện</text>
+<text top="1084" left="315" width="152" height="18" font="4">cảm biến/firmware.</text>
+<text top="1032" left="588" width="159" height="18" font="4">Hướng trục, bias, độ</text>
+<text top="1058" left="588" width="192" height="18" font="4">rung, thời điểm lấy mẫu.</text>
+<text top="1145" left="473" width="10" height="18" font="4">3</text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="6" size="16" family="YUEHXQ+DejaVuSansMono" color="#000000"/>
+<text top="139" left="169" width="92" height="18" font="4">Thành phần</text>
+<text top="139" left="315" width="73" height="18" font="4">Nội dung</text>
+<text top="139" left="588" width="145" height="18" font="4">Điều kiện kiểm tra</text>
+<text top="174" left="169" width="98" height="18" font="4">Optical flow</text>
+<text top="200" left="169" width="74" height="18" font="4">(đầu vào)</text>
+<text top="174" left="315" width="252" height="18" font="4">Chuyển động ảnh/góc tích phân,</text>
+<text top="200" left="315" width="238" height="18" font="4">thời gian tích phân, chất lượng</text>
+<text top="226" left="315" width="182" height="18" font="4">đo; quy đổi theo driver.</text>
+<text top="174" left="588" width="194" height="18" font="4">Không nhầm dữ liệu tích</text>
+<text top="200" left="588" width="163" height="18" font="4">phân (rad) với tốc độ</text>
+<text top="226" left="588" width="200" height="18" font="4">(rad/s); bù quay và offset.</text>
+<text top="251" left="169" width="128" height="18" font="4">Range (đầu vào)</text>
+<text top="251" left="315" width="250" height="18" font="4">Khoảng cách hướng xuống, đơn</text>
+<text top="277" left="315" width="245" height="18" font="4">vị mét, trạng thái hợp lệ và giới</text>
+<text top="303" left="315" width="57" height="18" font="4">hạn đo.</text>
+<text top="251" left="588" width="197" height="18" font="4">Không đồng nhất khoảng</text>
+<text top="277" left="588" width="160" height="18" font="4">cách xiên với độ cao</text>
+<text top="303" left="588" width="191" height="18" font="4">đứng khi drone nghiêng.</text>
+<text top="329" left="169" width="117" height="18" font="4">Nhiệm vụ (đầu</text>
+<text top="355" left="169" width="35" height="18" font="4">vào)</text>
+<text top="329" left="315" width="248" height="18" font="4">Điểm đặt cục bộ, độ cao, hướng</text>
+<text top="355" left="315" width="230" height="18" font="4">thân, giới hạn vận tốc và điều</text>
+<text top="381" left="315" width="83" height="18" font="4">kiện dừng.</text>
+<text top="329" left="588" width="191" height="18" font="4">Đơn vị, gốc tọa độ và hệ</text>
+<text top="355" left="588" width="122" height="18" font="4">trục thống nhất.</text>
+<text top="406" left="169" width="124" height="18" font="4">Ước lượng (đầu</text>
+<text top="432" left="169" width="22" height="18" font="4">ra)</text>
+<text top="406" left="315" width="248" height="18" font="4">Vị trí, vận tốc cục bộ, trạng thái</text>
+<text top="432" left="315" width="194" height="18" font="4">hợp lệ của bộ ước lượng.</text>
+<text top="406" left="588" width="193" height="18" font="4">Xác minh GPS và nguồn</text>
+<text top="432" left="588" width="182" height="18" font="4">vị trí ngoài không tham</text>
+<text top="458" left="588" width="175" height="18" font="4">gia bài kiểm tra không</text>
+<text top="484" left="588" width="40" height="18" font="4">GPS.</text>
+<text top="510" left="169" width="95" height="18" font="4">Hành vi bay</text>
+<text top="535" left="169" width="61" height="18" font="4">(đầu ra)</text>
+<text top="510" left="315" width="229" height="18" font="4">Giữ vị trí; lần lượt đi qua bốn</text>
+<text top="535" left="315" width="222" height="18" font="4">đỉnh hình vuông; xử lý dừng</text>
+<text top="561" left="315" width="193" height="18" font="4">nhiệm vụ theo điều kiện.</text>
+<text top="510" left="588" width="168" height="18" font="4">Đánh giá theo dữ liệu</text>
+<text top="535" left="588" width="173" height="18" font="4">chuẩn, không chỉ nhìn</text>
+<text top="561" left="588" width="152" height="18" font="4">quỹ đạo ước lượng.</text>
+<text top="587" left="169" width="118" height="18" font="4">Hồ sơ đánh giá</text>
+<text top="587" left="315" width="240" height="18" font="4">Mã nguồn, cấu hình, ULog, dữ</text>
+<text top="613" left="315" width="233" height="18" font="4">liệu chuẩn, video và đồ thị sai</text>
+<text top="639" left="315" width="22" height="18" font="4">số.</text>
+<text top="587" left="588" width="184" height="18" font="4">Có phiên bản và mã lần</text>
+<text top="613" left="588" width="146" height="18" font="4">thử; lưu cả lần thất</text>
+<text top="639" left="588" width="111" height="18" font="4">bại/dừng sớm.</text>
+<text top="716" left="149" width="27" height="19" font="1"><b>3.2</b></text>
+<text top="716" left="197" width="98" height="19" font="1"><b>Sơ đồ khối</b></text>
+<text top="764" left="149" width="659" height="18" font="4">Hình <a href="m0-layout.html#7">1 </a>phân biệt vòng điều khiển và nhánh đánh giá. Ground truth (GT) là dữ liệu</text>
+<text top="794" left="149" width="659" height="18" font="4">chuẩn độc lập, chỉ dùng để đo sai số, không cấp vị trí lý tưởng ngược vào EKF trong</text>
+<text top="824" left="149" width="192" height="18" font="4">bài kiểm tra không GPS.</text>
+<text top="889" left="149" width="27" height="19" font="1"><b>3.3</b></text>
+<text top="889" left="197" width="364" height="19" font="1"><b>Lựa chọn nền tảng và giao diện với N02</b></text>
+<text top="937" left="149" width="465" height="18" font="4">PX4 là lựa chọn ưu tiên để thống nhất với N02. Airframe</text>
+<text top="938" left="620" width="163" height="16" font="6">4021_gz_x500_flow</text>
+<text top="937" left="790" width="18" height="18" font="4">có</text>
+<text top="967" left="149" width="659" height="18" font="4">trong mã nguồn PX4 v1.16.0; đây là ứng viên để thử, không phải bằng chứng rằng</text>
+<text top="996" left="149" width="659" height="18" font="4">môi trường N02 đã chạy <a href="m0-layout.html#17">được[5]. </a>Nhóm cần kiểm tra revision kho mô hình, plugin</text>
+<text top="1026" left="149" width="339" height="18" font="4">và dữ liệu tới EKF trước khi khóa cấu hình.</text>
+<text top="1060" left="191" width="440" height="18" font="4">Trong Gazebo mới, cảm biến đi qua Gazebo Transport và</text>
+<text top="1062" left="636" width="86" height="16" font="6">gz_bridge</text>
+<text top="1060" left="726" width="82" height="18" font="4">vào uORB</text>
+<text top="1090" left="149" width="659" height="18" font="4">nội bộ PX4, không mặc định đi qua MA<a href="m0-layout.html#17">VLink[6]. </a>MAVSDK-Python được dùng cho</text>
+<text top="1145" left="473" width="10" height="18" font="4">4</text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="7" size="16" family="GDJGUI+TimesNewRomanPSMT" color="#000000"/>
+<text top="163" left="312" width="95" height="15" font="7">Gazebo: động</text>
+<text top="183" left="314" width="92" height="15" font="7">lực học drone</text>
+<text top="203" left="283" width="155" height="15" font="7">và cảm biến mô phỏng</text>
+<text top="163" left="545" width="90" height="15" font="7">N01: chương</text>
+<text top="183" left="541" width="99" height="15" font="7">trình nhiệm vụ</text>
+<text top="203" left="514" width="154" height="15" font="7">và bộ giám sát đề xuất</text>
+<text top="266" left="312" width="96" height="15" font="7">PX4: nhận dữ</text>
+<text top="286" left="315" width="91" height="15" font="7">liệu cảm biến</text>
+<text top="306" left="293" width="134" height="15" font="7">và ước lượng EKF2</text>
+<text top="269" left="544" width="92" height="15" font="7">PX4: bộ điều</text>
+<text top="289" left="548" width="85" height="15" font="7">khiển có sẵn</text>
+<text top="310" left="529" width="122" height="15" font="7">và đầu ra động cơ</text>
+<text top="369" left="307" width="106" height="15" font="7">GT từ Gazebo /</text>
+<text top="389" left="315" width="89" height="15" font="7">camera ngoài</text>
+<text top="409" left="289" width="142" height="15" font="7">chỉ phục vụ đánh giá</text>
+<text top="375" left="543" width="95" height="15" font="7">N01: đồng bộ</text>
+<text top="396" left="539" width="103" height="15" font="7">log, đổi hệ trục</text>
+<text top="416" left="545" width="90" height="15" font="7">tính sai số và</text>
+<text top="436" left="552" width="77" height="15" font="7">lập báo cáo</text>
+<text top="236" left="597" width="57" height="15" font="7">điểm đặt</text>
+<text top="483" left="149" width="659" height="18" font="4">Hình 1: Kiến trúc dự kiến; nét đứt là luồng đo lường. Khi bay thật, cảm biến và động</text>
+<text top="507" left="149" width="219" height="18" font="4">cơ thật thay khối mô phỏng.</text>
+<text top="559" left="149" width="430" height="18" font="4">lệnh nhiệm vụ và telemetry. Với bài bay cục bộ, ưu tiên</text>
+<text top="560" left="584" width="201" height="16" font="6">position_velocity_ned</text>
+<text top="559" left="790" width="18" height="18" font="4">để</text>
+<text top="589" left="149" width="238" height="18" font="4">đọc vị trí/vận tốc, không dùng</text>
+<text top="590" left="392" width="173" height="16" font="6">telemetry.position</text>
+<text top="589" left="570" width="237" height="18" font="4">vì API đó biểu diễn vị trí toàn</text>
+<text top="618" left="149" width="659" height="18" font="4"><a href="m0-layout.html#17">cầu[7]. </a>Lệnh Offboard và điều kiện hợp lệ phải đối chiếu bản PX4 khóa. PX4 yêu</text>
+<text top="648" left="149" width="659" height="18" font="4">cầu luồng chứng minh kết nối còn hoạt động trên 2 Hz; đây không phải tần số lấy mẫu</text>
+<text top="678" left="149" width="121" height="18" font="4">optical flow[<a href="m0-layout.html#17">8</a>].</text>
+<text top="712" left="191" width="550" height="18" font="4">Hai nhóm cần thống nhất bằng một tệp cấu hình hoặc README ngắn:</text>
+<text top="746" left="162" width="646" height="18" font="4">• Phiên bản/commit PX4, revision mô hình, Gazebo, Python và MAVSDK; cách</text>
+<text top="776" left="178" width="214" height="18" font="4">khởi chạy trên máy thứ hai.</text>
+<text top="805" left="162" width="646" height="18" font="4">• Model/world, hướng cảm biến, loại dữ liệu, đơn vị, hệ trục, timestamp và tần số</text>
+<text top="835" left="178" width="111" height="18" font="4">nhận đo được.</text>
+<text top="865" left="162" width="646" height="18" font="4">• Tên topic GT xác định từ môi trường đang chạy, không giả định sẵn; phép biến</text>
+<text top="895" left="178" width="251" height="18" font="4">đổi GT sang hệ cục bộ của PX4.</text>
+<text top="924" left="162" width="646" height="18" font="4">• Cấu hình vô hiệu GPS fusion và các nguồn vị trí lý tưởng; log chứng minh optical</text>
+<text top="954" left="178" width="177" height="18" font="4">flow/range được dùng.</text>
+<text top="984" left="162" width="646" height="18" font="4">• Bản dùng thử tối thiểu, người xử lý lỗi và ngày bàn giao do hai nhóm thống nhất.</text>
+<text top="1018" left="191" width="617" height="18" font="4">N01 có thể chạy môi trường tối thiểu từ mã nguồn chính thức trong lúc N02 xây</text>
+<text top="1047" left="149" width="659" height="18" font="4">bản dùng chung. ROS 2 và Docker không bắt buộc cho module đầu tiên. Mô phỏng</text>
+<text top="1077" left="149" width="659" height="18" font="4">sàn thiếu hoa văn chỉ có ý nghĩa nếu plugin flow tính từ ảnh; nếu flow tổng hợp từ</text>
+<text top="1145" left="473" width="10" height="18" font="4">5</text>
+</page>
+<page number="8" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="149" width="659" height="18" font="4">trạng thái vật lý, nhóm chỉ kết luận về phản ứng trước lỗi tín hiệu được tiêm, không</text>
+<text top="162" left="149" width="311" height="18" font="4">kết luận về ảnh hưởng ánh sáng/texture.</text>
+<text top="233" left="149" width="13" height="23" font="2"><b>4</b></text>
+<text top="233" left="188" width="433" height="23" font="2"><b>Giải pháp đề xuất và kế hoạch khảo sát</b></text>
+<text top="294" left="149" width="27" height="19" font="1"><b>4.1</b></text>
+<text top="294" left="197" width="339" height="19" font="1"><b>Phần có sẵn và phần nhóm thực hiện</b></text>
+<text top="342" left="149" width="659" height="18" font="4">Nhóm sử dụng EKF2, bộ điều khiển và cơ chế an toàn gốc của PX4 làm nền. Nhóm</text>
+<text top="372" left="149" width="659" height="18" font="4">tự thực hiện: cấu hình kiểm chứng không GPS, chương trình waypoint, bộ thu/đồng</text>
+<text top="402" left="149" width="659" height="18" font="4">bộ dữ liệu, công cụ đo sai số và module giám sát nhiệm vụ. Cấu hình tham số không</text>
+<text top="431" left="149" width="204" height="18" font="4">được coi là một EKF mới.</text>
+<text top="466" left="191" width="617" height="18" font="4">Module giám sát đề xuất gồm ba trạng thái: thực hiện nhiệm vụ, giảm tốc khi</text>
+<text top="495" left="149" width="659" height="18" font="4">chất lượng dữ liệu suy giảm nhưng ước lượng còn hợp lệ, và dừng nhiệm vụ khi điều</text>
+<text top="525" left="149" width="659" height="18" font="4">kiện an toàn không còn đáp ứng. Ngưỡng chất lượng, tuổi dữ liệu và thời gian xác</text>
+<text top="555" left="149" width="659" height="18" font="4">nhận lỗi được chọn từ tập hiệu chuẩn, rồi giữ cố định trên tập đánh giá. Nhóm dùng</text>
+<text top="584" left="149" width="659" height="18" font="4">khoảng trễ chuyển trạng thái để tránh dao động lệnh. Nguồn tín hiệu sức khỏe có thể</text>
+<text top="614" left="149" width="659" height="18" font="4">cần bổ sung từ MAVLink/uORB; không giả định MAVSDK đã cung cấp mọi trường</text>
+<text top="644" left="149" width="94" height="18" font="4">nội bộ EKF.</text>
+<text top="678" left="191" width="617" height="18" font="4">Khi ước lượng vị trí mất hợp lệ, nhóm không tiếp tục gửi lệnh giữ vị trí dựa trên</text>
+<text top="707" left="149" width="659" height="18" font="4">tọa độ đó. Hành động tiếp theo phụ thuộc trạng thái độ cao, liên lạc và chế độ dự</text>
+<text top="737" left="149" width="659" height="18" font="4">phòng đã kiểm chứng; không mặc định RTL trong nhà hoặc hạ cánh tự động luôn an</text>
+<text top="767" left="149" width="659" height="18" font="4">toàn. Cơ chế an toàn gốc PX4 và quyền can thiệp của người điều khiển vẫn được giữ.</text>
+<text top="801" left="191" width="617" height="18" font="4">Để đánh giá bộ giám sát, nhóm so với cùng phiên bản PX4, cảm biến, world và</text>
+<text top="831" left="149" width="659" height="18" font="4">nhiệm vụ nhưng không bật module giám sát bổ sung. Các chỉ số so sánh gồm sai số</text>
+<text top="860" left="149" width="659" height="18" font="4">bám, tỷ lệ hoàn thành, thời gian phản ứng lỗi, số lần dừng không cần thiết và thời</text>
+<text top="890" left="149" width="659" height="18" font="4">gian nhiệm vụ. Giảm tốc có thể giảm lỗi bám nhưng không chứng minh bộ ước lượng</text>
+<text top="920" left="149" width="659" height="18" font="4">chính xác hơn. Nếu module không mang lại lợi ích, nhóm báo cáo kết quả âm và phân</text>
+<text top="949" left="149" width="659" height="18" font="4">tích nguyên nhân. Hướng này cần GVHD xác nhận phù hợp hàm lượng thuật toán</text>
+<text top="979" left="149" width="311" height="18" font="4">CE201; chưa cam kết sửa cấu trúc EKF.</text>
+<text top="1145" left="473" width="10" height="18" font="4">6</text>
+</page>
+<page number="9" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="149" width="27" height="19" font="1"><b>4.2</b></text>
+<text top="132" left="197" width="253" height="19" font="1"><b>Danh mục khảo sát dự kiến</b></text>
+<text top="180" left="149" width="659" height="18" font="4">Bảng <a href="m0-layout.html#9">2 </a>là danh mục để đọc và so sánh ở tuần 2–3, không phải tuyên bố đã hoàn thành</text>
+<text top="210" left="149" width="659" height="18" font="4">M1. Gageik và cộng sự nghiên cứu định vị bằng flow[<a href="m0-layout.html#17">9</a>]; Wang và cộng sự khảo sát</text>
+<text top="240" left="149" width="659" height="18" font="4">bộ ước lượng có hỗ trợ mô hình khí <a href="m0-layout.html#17">động[10]; </a>Honegger và cộng sự trình bày phần</text>
+<text top="269" left="149" width="659" height="18" font="4">cứng camera flow <a href="m0-layout.html#18">nhúng[11]; </a>Grabe và cộng sự nghiên cứu ước lượng chuyển động</text>
+<text top="299" left="149" width="659" height="18" font="4">từ camera và <a href="m0-layout.html#18">IMU[12]. </a>Nguồn trong nước của Nguyễn Minh Tâm và cộng sự dùng</text>
+<text top="329" left="149" width="659" height="18" font="4">camera Logitech C270, trích đặc trưng và PID phân tầng[<a href="m0-layout.html#18">13</a>]. Các công trình này</text>
+<text top="358" left="149" width="659" height="18" font="4">khác cấu hình N01, không được chuyển số liệu của tác giả thành hiệu năng dự kiến</text>
+<text top="388" left="149" width="659" height="18" font="4">của nhóm. ARK Flow là ví dụ sản phẩm tích hợp, không phải quyết định mua thiết</text>
+<text top="418" left="149" width="52" height="18" font="4"><a href="m0-layout.html#18">bị[14].</a></text>
+<text top="458" left="268" width="421" height="18" font="4">Bảng 2: Nguồn dự kiến khảo sát và câu hỏi cần trả lời</text>
+<text top="512" left="169" width="97" height="18" font="4">Nguồn / loại</text>
+<text top="512" left="361" width="174" height="18" font="4">Nội dung cần khảo sát</text>
+<text top="512" left="596" width="176" height="18" font="4">Giới hạn cần đối chiếu</text>
+<text top="548" left="169" width="104" height="18" font="4">Gageik et al.,</text>
+<text top="573" left="169" width="153" height="18" font="4"><a href="m0-layout.html#17">2013[9</a>]; bài tạp chí</text>
+<text top="548" left="361" width="189" height="18" font="4">Flow, ước lượng độ cao,</text>
+<text top="573" left="361" width="173" height="18" font="4">giữ vị trí và waypoint.</text>
+<text top="548" left="596" width="191" height="18" font="4">Phần cứng khác; độ lệch</text>
+<text top="573" left="596" width="171" height="18" font="4">chuẩn không thay cho</text>
+<text top="599" left="596" width="110" height="18" font="4">sai số cực đại.</text>
+<text top="625" left="169" width="174" height="18" font="4">Wang et al., 2017[<a href="m0-layout.html#17">10</a>];</text>
+<text top="651" left="169" width="93" height="18" font="4">bài hội nghị</text>
+<text top="625" left="361" width="198" height="18" font="4">Hợp nhất OF/IMU và mô</text>
+<text top="651" left="361" width="217" height="18" font="4">hình khí động; xử lý dữ liệu</text>
+<text top="677" left="361" width="71" height="18" font="4">ảnh kém.</text>
+<text top="625" left="596" width="163" height="18" font="4">Hiệu chuẩn mô hình;</text>
+<text top="651" left="596" width="182" height="18" font="4">phân biệt lỗi vận tốc và</text>
+<text top="677" left="596" width="67" height="18" font="4">lỗi vị trí.</text>
+<text top="703" left="169" width="124" height="18" font="4">Honegger et al.,</text>
+<text top="728" left="169" width="174" height="18" font="4"><a href="m0-layout.html#18">2013[11</a>]; bài hội nghị</text>
+<text top="703" left="361" width="202" height="18" font="4">Thiết kế PX4FLOW, gyro</text>
+<text top="728" left="361" width="150" height="18" font="4">và đo khoảng cách.</text>
+<text top="703" left="596" width="135" height="18" font="4">Không đồng nhất</text>
+<text top="728" left="596" width="155" height="18" font="4">PX4FLOW với mọi</text>
+<text top="754" left="596" width="153" height="18" font="4">module PMW3901.</text>
+<text top="780" left="169" width="95" height="18" font="4">Grabe et al.,</text>
+<text top="806" left="169" width="162" height="18" font="4"><a href="m0-layout.html#18">2015[12]; </a>bài tạp chí</text>
+<text top="780" left="361" width="206" height="18" font="4">Camera–IMU, tỷ lệ metric</text>
+<text top="806" left="361" width="188" height="18" font="4">và so sánh phương pháp</text>
+<text top="832" left="361" width="85" height="18" font="4">ước lượng.</text>
+<text top="780" left="596" width="190" height="18" font="4">Cần ảnh thô; không cắm</text>
+<text top="806" left="596" width="180" height="18" font="4">trực tiếp thuật toán vào</text>
+<text top="832" left="596" width="144" height="18" font="4">chip chỉ xuất flow.</text>
+<text top="857" left="169" width="109" height="18" font="4">Nguyen et al.,</text>
+<text top="883" left="169" width="168" height="18" font="4"><a href="m0-layout.html#18">2022[13]; </a>nghiên cứu</text>
+<text top="909" left="169" width="85" height="18" font="4">trong nước</text>
+<text top="857" left="361" width="173" height="18" font="4">Camera hướng xuống,</text>
+<text top="883" left="361" width="197" height="18" font="4">Shi–Tomasi, theo dõi đặc</text>
+<text top="909" left="361" width="106" height="18" font="4">trưng và PID.</text>
+<text top="857" left="596" width="169" height="18" font="4">Khác sensor/EKF của</text>
+<text top="883" left="596" width="173" height="18" font="4">N01; cần đọc protocol</text>
+<text top="909" left="596" width="183" height="18" font="4">và phép đo trước khi so</text>
+<text top="935" left="596" width="56" height="18" font="4">số liệu.</text>
+<text top="961" left="169" width="169" height="18" font="4">PX4 Optical <a href="m0-layout.html#17">Flow[3];</a></text>
+<text top="987" left="169" width="151" height="18" font="4">hướng dẫn kỹ thuật</text>
+<text top="961" left="361" width="208" height="18" font="4">Driver, hướng cảm biến và</text>
+<text top="987" left="361" width="145" height="18" font="4">điều kiện tích hợp.</text>
+<text top="961" left="596" width="185" height="18" font="4">Phụ thuộc đúng module</text>
+<text top="987" left="596" width="132" height="18" font="4">và bản firmware.</text>
+<text top="1012" left="169" width="162" height="18" font="4">PX4 EKF2 <a href="m0-layout.html#17">guide[4</a>];</text>
+<text top="1038" left="169" width="151" height="18" font="4">hướng dẫn kỹ thuật</text>
+<text top="1012" left="361" width="185" height="18" font="4">Điều kiện fusion, noise,</text>
+<text top="1038" left="361" width="196" height="18" font="4">kiểm tra sức khỏe và log.</text>
+<text top="1012" left="596" width="162" height="18" font="4">Cơ chế có sẵn không</text>
+<text top="1038" left="596" width="152" height="18" font="4">phải đóng góp mới.</text>
+<text top="1145" left="473" width="10" height="18" font="4">7</text>
+</page>
+<page number="10" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="8" size="19" family="XXKOOU+TimesNewRomanPS" color="#000000"/>
+	<fontspec id="9" size="19" family="WDBFNJ+LatinModernMath" color="#000000"/>
+	<fontspec id="10" size="14" family="WDBFNJ+LatinModernMath" color="#000000"/>
+<text top="139" left="169" width="97" height="18" font="4">Nguồn / loại</text>
+<text top="139" left="361" width="174" height="18" font="4">Nội dung cần khảo sát</text>
+<text top="139" left="596" width="176" height="18" font="4">Giới hạn cần đối chiếu</text>
+<text top="174" left="169" width="154" height="18" font="4">ARK <a href="m0-layout.html#18">Flow[14]; </a>sản</text>
+<text top="200" left="169" width="137" height="18" font="4">phẩm thương mại</text>
+<text top="174" left="361" width="180" height="18" font="4">Cấu hình cảm biến tích</text>
+<text top="200" left="361" width="206" height="18" font="4">hợp, giao tiếp và khả năng</text>
+<text top="226" left="361" width="79" height="18" font="4">triển khai.</text>
+<text top="174" left="596" width="171" height="18" font="4">Giá, tồn kho và driver</text>
+<text top="200" left="596" width="175" height="18" font="4">thực tế chưa xác nhận.</text>
+<text top="251" left="169" width="163" height="18" font="4">PX4 Offboard[<a href="m0-layout.html#17">8]; </a>tài</text>
+<text top="277" left="169" width="65" height="18" font="4">liệu API</text>
+<text top="251" left="361" width="209" height="18" font="4">Điểm đặt cục bộ, điều kiện</text>
+<text top="277" left="361" width="178" height="18" font="4">vào mode, mất kết nối.</text>
+<text top="251" left="596" width="189" height="18" font="4">Không thay thế protocol</text>
+<text top="277" left="596" width="131" height="18" font="4">kiểm tra an toàn.</text>
+<text top="342" left="191" width="617" height="18" font="4">Báo cáo M1 dự kiến có ít nhất tám tài liệu và bảng so sánh theo: cảm biến, nền</text>
+<text top="371" left="149" width="659" height="18" font="4">tảng, nhu cầu tính toán, phạm vi hoạt động, độ trôi, điều kiện thử nghiệm, dữ liệu</text>
+<text top="401" left="149" width="659" height="18" font="4">chuẩn, khả năng tái hiện và chi phí tích hợp. Nhóm phân biệt bài báo, tài liệu kỹ thuật</text>
+<text top="431" left="149" width="659" height="18" font="4">và mô tả sản phẩm; không gọi toàn bộ danh mục là bài báo khoa học. Việc chọn giải</text>
+<text top="460" left="149" width="659" height="18" font="4">pháp cuối cùng dựa cả trên khảo sát và thử tích hợp, không chỉ dựa vào số liệu tốt nhất</text>
+<text top="490" left="149" width="151" height="18" font="4">của một công trình.</text>
+<text top="562" left="149" width="13" height="23" font="2"><b>5</b></text>
+<text top="562" left="188" width="352" height="23" font="2"><b>Tiêu chí đạt và phương pháp đo</b></text>
+<text top="623" left="149" width="27" height="19" font="1"><b>5.1</b></text>
+<text top="623" left="197" width="295" height="19" font="1"><b>Yêu cầu gốc và diễn giải đề xuất</b></text>
+<text top="671" left="149" width="157" height="18" font="4">Theo mô tả N01[<a href="m0-layout.html#17">1</a>]:</text>
+<text top="671" left="314" width="136" height="18" font="8"><i>giữ vị trí sai lệch</i></text>
+<text top="669" left="456" width="62" height="19" font="9">≤ ±0,5</text>
+<text top="671" left="524" width="284" height="18" font="8"><i>m trong 30 s ở độ cao 1–1,5 m; bay</i></text>
+<text top="700" left="149" width="195" height="18" font="8"><i>bốn waypoint hình vuông</i></text>
+<text top="698" left="348" width="39" height="19" font="9">2 × 2</text>
+<text top="700" left="392" width="416" height="18" font="8"><i>m; có log so sánh với ground truth (thước đo/marker).</i></text>
+<text top="735" left="191" width="617" height="18" font="4">Nhóm giữ nguyên yêu cầu này. Để phép thử lặp lại được, nhóm đề xuất đánh giá</text>
+<text top="764" left="149" width="659" height="18" font="4">sai số ngang theo bán kính hai chiều và giá trị cực đại trong toàn cửa sổ 30 s. Đây là</text>
+<text top="794" left="149" width="249" height="17" font="5"><b>diễn giải cần GVHD xác nhận</b></text>
+<text top="794" left="398" width="410" height="18" font="4">, không tự thay tiêu chí bằng căn sai số bình phương</text>
+<text top="824" left="149" width="340" height="18" font="4">trung bình (RMSE) hay phân vị 95% (P95).</text>
+<text top="889" left="149" width="27" height="19" font="1"><b>5.2</b></text>
+<text top="889" left="197" width="127" height="19" font="1"><b>Hai loại sai số</b></text>
+<text top="937" left="149" width="489" height="18" font="4">Sau khi đổi về cùng hệ trục, gốc tọa độ và đồng bộ thời gian, gọi</text>
+<text top="937" left="642" width="11" height="17" font="5"><b>p</b></text>
+<text top="944" left="653" width="44" height="14" font="10">𝐺𝑇 ,𝑥𝑦</text>
+<text top="937" left="702" width="106" height="18" font="4">là vị trí ngang</text>
+<text top="967" left="149" width="51" height="18" font="4">chuẩn,</text>
+<text top="967" left="205" width="11" height="17" font="5"><b>p</b></text>
+<text top="974" left="216" width="37" height="14" font="10">𝑠𝑝,𝑥𝑦</text>
+<text top="967" left="258" width="110" height="18" font="4">là điểm đặt và</text>
+<text top="964" left="383" width="0" height="19" font="9">̂</text>
+<text top="967" left="372" width="11" height="17" font="5"><b>p</b></text>
+<text top="974" left="383" width="17" height="14" font="10">𝑥𝑦</text>
+<text top="967" left="406" width="146" height="18" font="4">là vị trí ước lượng:</text>
+<text top="1016" left="334" width="9" height="19" font="9">𝑒</text>
+<text top="1026" left="343" width="30" height="14" font="10">ℎ𝑜𝑙𝑑</text>
+<text top="1016" left="373" width="56" height="19" font="9">(𝑡) = ‖</text>
+<text top="1019" left="429" width="11" height="17" font="5"><b>p</b></text>
+<text top="1026" left="440" width="44" height="14" font="10">𝐺𝑇 ,𝑥𝑦</text>
+<text top="1016" left="485" width="42" height="19" font="9">(𝑡) −</text>
+<text top="1019" left="531" width="11" height="17" font="5"><b>p</b></text>
+<text top="1026" left="542" width="37" height="14" font="10">𝑠𝑝,𝑥𝑦</text>
+<text top="1016" left="579" width="30" height="19" font="9">(𝑡)‖</text>
+<text top="1026" left="609" width="8" height="14" font="10">2</text>
+<text top="1016" left="618" width="5" height="19" font="9">,</text>
+<text top="1019" left="785" width="23" height="18" font="4">(1)</text>
+<text top="1051" left="343" width="9" height="19" font="9">𝑒</text>
+<text top="1060" left="352" width="21" height="14" font="10">𝑒𝑠𝑡</text>
+<text top="1051" left="373" width="66" height="19" font="9">(𝑡) = ‖ ̂</text>
+<text top="1053" left="429" width="11" height="17" font="5"><b>p</b></text>
+<text top="1060" left="440" width="17" height="14" font="10">𝑥𝑦</text>
+<text top="1051" left="457" width="42" height="19" font="9">(𝑡) −</text>
+<text top="1053" left="503" width="11" height="17" font="5"><b>p</b></text>
+<text top="1060" left="514" width="44" height="14" font="10">𝐺𝑇 ,𝑥𝑦</text>
+<text top="1051" left="559" width="30" height="19" font="9">(𝑡)‖</text>
+<text top="1060" left="589" width="8" height="14" font="10">2</text>
+<text top="1051" left="598" width="5" height="19" font="9">.</text>
+<text top="1053" left="785" width="23" height="18" font="4">(2)</text>
+<text top="1145" left="473" width="10" height="18" font="4">8</text>
+</page>
+<page number="11" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="130" left="149" width="9" height="19" font="9">𝑒</text>
+<text top="139" left="158" width="30" height="14" font="10">ℎ𝑜𝑙𝑑</text>
+<text top="132" left="193" width="355" height="18" font="4">đánh giá khả năng giữ vị trí của toàn hệ thống;</text>
+<text top="130" left="552" width="9" height="19" font="9">𝑒</text>
+<text top="139" left="561" width="21" height="14" font="10">𝑒𝑠𝑡</text>
+<text top="132" left="586" width="221" height="18" font="4">đánh giá riêng bộ ước lượng.</text>
+<text top="162" left="149" width="659" height="18" font="4">Nhóm báo cáo cực đại, RMSE và P95 của từng loại, nhưng dùng chỉ số đã được GVHD</text>
+<text top="191" left="149" width="511" height="18" font="4">chấp thuận để kết luận đạt KPI. Sai số độ cao được báo cáo riêng.</text>
+<text top="256" left="149" width="27" height="19" font="1"><b>5.3</b></text>
+<text top="256" left="197" width="195" height="19" font="1"><b>Quy trình đo dự kiến</b></text>
+<text top="300" left="154" width="654" height="18" font="4">1. Khóa cấu hình, điểm đặt và điều kiện bề mặt/ánh sáng. Chọn trước quy tắc bắt</text>
+<text top="330" left="178" width="630" height="18" font="4">đầu cửa sổ đo sau khi ổn định độ cao; không chọn lại đoạn 30 s đẹp nhất sau khi</text>
+<text top="360" left="178" width="68" height="18" font="4">xem log.</text>
+<text top="389" left="154" width="654" height="18" font="4">2. Với hover, đề xuất ít nhất ba lần thử cho mỗi độ cao 1,0 m và 1,5 m, ghi đầy đủ</text>
+<text top="419" left="178" width="630" height="18" font="4">các lần đã khởi động. Một lần không đủ 30 s hoặc thiếu GT không được ghi là</text>
+<text top="449" left="178" width="29" height="18" font="4">đạt.</text>
+<text top="478" left="154" width="654" height="18" font="4">3. Với hình vuông, xuất phát ở một đỉnh, đi qua bốn đỉnh và khép về điểm đầu, cạnh</text>
+<text top="508" left="178" width="630" height="18" font="4">2 m. Ghi sai số tới từng đỉnh, độ lệch khỏi cạnh, thời gian hoàn thành và lý do</text>
+<text top="538" left="178" width="630" height="18" font="4">dừng. Ngưỡng đạt waypoint và tốc độ được chốt trước thử nghiệm; đề bài chưa</text>
+<text top="567" left="178" width="227" height="18" font="4">nêu ngưỡng số cho phần này.</text>
+<text top="597" left="154" width="653" height="18" font="4">4. Trong SITL, ghi GT từ Gazebo cùng đồng hồ mô phỏng và log PX4. Xác minh</text>
+<text top="627" left="178" width="630" height="18" font="4">ánh xạ hệ trục/gốc bằng các dịch chuyển thử biết trước. Không căn chỉnh riêng</text>
+<text top="656" left="178" width="194" height="18" font="4">từng đoạn để che độ trôi.</text>
+<text top="686" left="154" width="654" height="18" font="4">5. Khi bay thật, dùng camera cố định quan sát marker hoặc phương tiện đo độc lập</text>
+<text top="716" left="178" width="630" height="18" font="4">phù hợp. Hiệu chuẩn camera và mặt phẳng ở độ cao bay, hoặc dùng mô hình hình</text>
+<text top="745" left="178" width="630" height="18" font="4">học 3D; không lấy phép chiếu mặt sàn áp thẳng cho marker trên drone vì sai số thị</text>
+<text top="775" left="178" width="26" height="18" font="4">sai.</text>
+<text top="805" left="154" width="654" height="18" font="4">6. Ước lượng sai số và độ phân giải hệ đo. Khi dữ liệu thưa, mất marker hoặc độ</text>
+<text top="834" left="178" width="630" height="18" font="4">không chắc chắn đo không đủ để phân biệt ngưỡng 0,5 m, chỉ báo cáo kết quả</text>
+<text top="864" left="178" width="305" height="18" font="4">quan sát, chưa kết luận đạt toàn cửa sổ.</text>
+<text top="898" left="191" width="617" height="18" font="4">Thử lỗi mất flow, range không hợp lệ, dữ liệu trễ và mất liên lạc chỉ trong</text>
+<text top="928" left="149" width="659" height="18" font="4">SITL/replay ở giai đoạn này. Với replay, nhóm đánh giá xử lý dữ liệu và quyết định</text>
+<text top="957" left="149" width="659" height="18" font="4">của module; không dùng replay để chứng minh phản ứng bay vòng kín. Dữ liệu sinh</text>
+<text top="987" left="149" width="659" height="18" font="4">nhân tạo chỉ kiểm tra logic phần mềm, không thay số liệu bay mô phỏng hoặc bay</text>
+<text top="1017" left="149" width="34" height="18" font="4">thật.</text>
+<text top="1145" left="473" width="10" height="18" font="4">9</text>
+</page>
+<page number="12" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="133" left="149" width="13" height="23" font="2"><b>6</b></text>
+<text top="133" left="188" width="338" height="23" font="2"><b>Thiết bị, phần mềm và an toàn</b></text>
+<text top="194" left="149" width="27" height="19" font="1"><b>6.1</b></text>
+<text top="194" left="197" width="347" height="19" font="1"><b>Danh mục dự kiến mượn và xác minh</b></text>
+<text top="238" left="149" width="659" height="18" font="4">Tình trạng sở hữu/cho mượn chưa xác nhận. Bảng <a href="m0-layout.html#12">3 </a>là danh mục đề nghị, không phải</text>
+<text top="264" left="149" width="637" height="18" font="4">danh sách thiết bị đã nhận. Số lượng sensor có thể gộp nếu chọn module tích hợp.</text>
+<text top="304" left="311" width="335" height="18" font="4">Bảng 3: Thiết bị và thông tin cần xác minh</text>
+<text top="359" left="169" width="80" height="18" font="4">Hạng mục</text>
+<text top="359" left="378" width="23" height="18" font="4">SL</text>
+<text top="359" left="439" width="146" height="18" font="4">Thông tin cần chốt</text>
+<text top="394" left="169" width="127" height="18" font="4">Flight controller</text>
+<text top="420" left="169" width="112" height="18" font="4">Pixhawk-class</text>
+<text top="394" left="378" width="10" height="18" font="4">1</text>
+<text top="394" left="439" width="294" height="18" font="4">Model, firmware hỗ trợ, cổng kết nối,</text>
+<text top="420" left="439" width="225" height="18" font="4">pinout, nguồn và bộ nhớ log.</text>
+<text top="446" left="169" width="137" height="18" font="4">Khung quadrotor,</text>
+<text top="472" left="169" width="91" height="18" font="4">motor, ESC</text>
+<text top="446" left="378" width="34" height="18" font="4">1 bộ</text>
+<text top="446" left="439" width="325" height="18" font="4">Tình trạng, kích thước, tải trọng, cấu hình</text>
+<text top="472" left="439" width="188" height="18" font="4">động cơ và bảo vệ cánh.</text>
+<text top="497" left="169" width="159" height="18" font="4">Module optical flow</text>
+<text top="523" left="169" width="103" height="18" font="4">hướng xuống</text>
+<text top="497" left="378" width="10" height="18" font="4">1</text>
+<text top="497" left="439" width="331" height="18" font="4">Mã sản phẩm, driver, giao tiếp, hướng lắp;</text>
+<text top="523" left="439" width="280" height="18" font="4">PMW3901 chỉ là ví dụ trong đề bài.</text>
+<text top="549" left="169" width="151" height="18" font="4">Rangefinder hướng</text>
+<text top="575" left="169" width="49" height="18" font="4">xuống</text>
+<text top="549" left="378" width="10" height="18" font="4">1</text>
+<text top="549" left="439" width="270" height="18" font="4">Mã sản phẩm và vùng đo phù hợp;</text>
+<text top="575" left="439" width="336" height="18" font="4">VL53L1X/TFmini là ví dụ, chưa chốt mua.</text>
+<text top="601" left="169" width="103" height="18" font="4">RC và bộ thu</text>
+<text top="601" left="378" width="34" height="18" font="4">1 bộ</text>
+<text top="601" left="439" width="316" height="18" font="4">Khả năng chuyển chế độ, mất liên lạc và</text>
+<text top="627" left="439" width="233" height="18" font="4">thao tác khẩn cấp đã kiểm tra.</text>
+<text top="652" left="169" width="183" height="18" font="4">Pin, sạc cân bằng, dụng</text>
+<text top="678" left="169" width="72" height="18" font="4">cụ nguồn</text>
+<text top="652" left="378" width="34" height="18" font="4">1 bộ</text>
+<text top="652" left="439" width="325" height="18" font="4">Đúng điện áp/tải; tình trạng pin; quy trình</text>
+<text top="678" left="439" width="257" height="18" font="4">sạc và bảo quản an toàn của Lab.</text>
+<text top="704" left="169" width="168" height="18" font="4">Khu bay có lưới hoặc</text>
+<text top="730" left="169" width="173" height="18" font="4">giải pháp bảo hộ được</text>
+<text top="756" left="169" width="43" height="18" font="4">duyệt</text>
+<text top="704" left="378" width="10" height="18" font="4">1</text>
+<text top="704" left="439" width="338" height="18" font="4">Diện tích, vùng cách ly, khoảng dừng, vị trí</text>
+<text top="730" left="439" width="262" height="18" font="4">người quan sát và quyền sử dụng.</text>
+<text top="782" left="169" width="153" height="18" font="4">Camera GT, giá đỡ,</text>
+<text top="807" left="169" width="105" height="18" font="4">marker/thước</text>
+<text top="782" left="378" width="34" height="18" font="4">1 bộ</text>
+<text top="782" left="439" width="325" height="18" font="4">Góc nhìn, hiệu chuẩn, tốc độ ghi, độ phân</text>
+<text top="807" left="439" width="181" height="18" font="4">giải, đồng bộ thời gian.</text>
+<text top="833" left="169" width="111" height="18" font="4">PC chạy SITL</text>
+<text top="833" left="378" width="10" height="18" font="4">1</text>
+<text top="833" left="439" width="335" height="18" font="4">Kiểm tra cấu hình máy thực tế và khả năng</text>
+<text top="859" left="439" width="347" height="18" font="4">chạy bộ phần mềm chung; chưa mặc định có</text>
+<text top="885" left="439" width="111" height="18" font="4">đủ tài nguyên.</text>
+<text top="949" left="191" width="617" height="18" font="4">Không mặc định cần Raspberry Pi/Jetson cho CE201. Nơi chạy chương trình</text>
+<text top="979" left="149" width="659" height="18" font="4">nhiệm vụ khi bay thật được chọn sau khi kiểm tra đường truyền và cơ chế an toàn.</text>
+<text top="1009" left="149" width="659" height="18" font="4">Nhóm ưu tiên thiết bị Lab đang hỗ trợ; chỉ lập đề nghị mua sau khi xác minh module,</text>
+<text top="1038" left="149" width="204" height="18" font="4">driver, nguồn và giao tiếp.</text>
+<text top="1145" left="469" width="19" height="18" font="4">10</text>
+</page>
+<page number="13" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="149" width="27" height="19" font="1"><b>6.2</b></text>
+<text top="132" left="197" width="245" height="19" font="1"><b>Các bước kiểm tra an toàn</b></text>
+<text top="176" left="154" width="15" height="18" font="4">1.</text>
+<text top="176" left="178" width="51" height="17" font="5"><b>SITL:</b></text>
+<text top="176" left="233" width="575" height="18" font="4">kiểm tra luồng không GPS, hover, waypoint, dừng nhiệm vụ và mất kết nối</text>
+<text top="206" left="178" width="489" height="18" font="4">bằng log. Không bỏ kiểm tra trạng thái hợp lệ để ép drone bay.</text>
+<text top="235" left="154" width="15" height="18" font="4">2.</text>
+<text top="236" left="178" width="176" height="17" font="5"><b>Trên bàn, tháo cánh:</b></text>
+<text top="235" left="363" width="445" height="18" font="4">kiểm tra nguồn, chiều/hướng cảm biến, khoảng cách, bộ</text>
+<text top="265" left="178" width="630" height="18" font="4">thu RC, thứ tự động cơ và hành vi khẩn cấp. Người có kinh nghiệm kiểm tra trước</text>
+<text top="295" left="178" width="163" height="18" font="4">khi chuyển sang bay.</text>
+<text top="324" left="154" width="15" height="18" font="4">3.</text>
+<text top="325" left="178" width="181" height="17" font="5"><b>Hover thấp có bảo hộ:</b></text>
+<text top="324" left="365" width="443" height="18" font="4">cần người điều khiển đủ năng lực và người quan sát riêng.</text>
+<text top="354" left="178" width="630" height="18" font="4">Không mặc định một thành viên đã có kỹ năng lái. Bắt đầu trong vùng làm việc</text>
+<text top="384" left="178" width="630" height="18" font="4">hợp lệ của sensor, tăng độ cao từng bước khi an toàn; chưa thử lỗi cảm biến ngoài</text>
+<text top="413" left="178" width="30" height="18" font="4">đời.</text>
+<text top="443" left="154" width="15" height="18" font="4">4.</text>
+<text top="443" left="178" width="126" height="17" font="5"><b>Waypoint thật:</b></text>
+<text top="443" left="310" width="497" height="18" font="4">chỉ xét sau khi hover ổn, hệ đo hoạt động và khu bay có biên đủ</text>
+<text top="473" left="178" width="630" height="18" font="4">cho kích thước drone, trôi, quãng dừng và bảo hộ. Không dùng kích thước quỹ</text>
+<text top="502" left="178" width="361" height="18" font="4">đạo 2 m làm kích thước tối thiểu của lồng bay.</text>
+<text top="537" left="149" width="659" height="18" font="4">Dây giữ hoặc bảo vệ cánh phải bố trí sao cho không vướng cánh hay làm mất ổn định.</text>
+<text top="566" left="149" width="659" height="18" font="4">Công tắc ngắt động cơ là biện pháp khẩn cấp có thể làm drone rơi, không phải cách</text>
+<text top="596" left="149" width="659" height="18" font="4">hạ cánh thông thường. Nếu chưa đáp ứng điều kiện an toàn, nhóm dừng phần bay thật</text>
+<text top="626" left="149" width="117" height="18" font="4">và báo GVHD.</text>
+<text top="697" left="149" width="13" height="23" font="2"><b>7</b></text>
+<text top="697" left="188" width="346" height="23" font="2"><b>Kế hoạch 13 tuần và phân công</b></text>
+<text top="758" left="149" width="27" height="19" font="1"><b>7.1</b></text>
+<text top="758" left="197" width="171" height="19" font="1"><b>Phân công dự kiến</b></text>
+<text top="807" left="149" width="122" height="17" font="5"><b>Phan Chí Kiên</b></text>
+<text top="806" left="275" width="533" height="18" font="4">phụ trách chính khảo sát ước lượng, cấu hình EKF2/không GPS, thiết</text>
+<text top="836" left="149" width="343" height="18" font="4">kế module giám sát và tích hợp phần mềm.</text>
+<text top="836" left="501" width="135" height="17" font="5"><b>Hồ Nhật Khanh</b></text>
+<text top="836" left="641" width="166" height="18" font="4">phụ trách chính khảo</text>
+<text top="866" left="149" width="659" height="18" font="4">sát cảm biến, đo GT và phân tích log, tích hợp phần cứng, quy trình kiểm thử và đóng</text>
+<text top="895" left="149" width="659" height="18" font="4">gói tái hiện. Mỗi người viết phần báo cáo mình phụ trách; hai người kiểm tra chéo</text>
+<text top="925" left="149" width="659" height="18" font="4">mã, dữ liệu và cùng trình bày khi bảo vệ. Phân công này cần hai thành viên xác nhận</text>
+<text top="955" left="149" width="110" height="18" font="4">trước khi nộp.</text>
+<text top="985" left="191" width="617" height="18" font="4">Bảng <a href="m0-layout.html#14">4 </a>bố trí khảo sát ở tuần 2–3 và phát triển song song với N02. Các đầu ra</text>
+<text top="1011" left="149" width="253" height="18" font="4">đều là dự kiến, chưa hoàn thành.</text>
+<text top="1145" left="469" width="19" height="18" font="4">11</text>
+</page>
+<page number="14" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="262" width="432" height="18" font="4">Bảng 4: Công việc, người phụ trách và đầu ra theo tuần</text>
+<text top="158" left="262" width="77" height="18" font="4">năm 2026</text>
+<text top="209" left="160" width="49" height="18" font="4">Tuần /</text>
+<text top="235" left="160" width="38" height="18" font="4">ngày</text>
+<text top="209" left="255" width="115" height="18" font="4">Kiên phụ trách</text>
+<text top="209" left="447" width="129" height="18" font="4">Khanh phụ trách</text>
+<text top="209" left="639" width="105" height="18" font="4">Đầu ra chung</text>
+<text top="270" left="160" width="38" height="18" font="4">W01</text>
+<text top="296" left="160" width="54" height="18" font="4">28/09–</text>
+<text top="321" left="160" width="44" height="18" font="4">04/10</text>
+<text top="270" left="255" width="147" height="18" font="4">Đặc tả, sơ đồ khối;</text>
+<text top="296" left="255" width="171" height="18" font="4">trao đổi phiên bản với</text>
+<text top="321" left="255" width="38" height="18" font="4">N02.</text>
+<text top="270" left="447" width="145" height="18" font="4">KPI/cách đo; danh</text>
+<text top="296" left="447" width="131" height="18" font="4">mục mượn, phân</text>
+<text top="321" left="447" width="43" height="18" font="4">công.</text>
+<text top="270" left="639" width="148" height="18" font="4">PDF M0, điểm cần</text>
+<text top="296" left="639" width="109" height="18" font="4">xác nhận; nộp</text>
+<text top="321" left="639" width="49" height="18" font="4">05/10.</text>
+<text top="347" left="160" width="38" height="18" font="4">W02</text>
+<text top="373" left="160" width="54" height="18" font="4">05/10–</text>
+<text top="399" left="160" width="44" height="18" font="4">11/10</text>
+<text top="347" left="255" width="174" height="18" font="4">Đọc OF/EKF; thử tích</text>
+<text top="373" left="255" width="150" height="18" font="4">hợp SITL tối thiểu.</text>
+<text top="347" left="447" width="149" height="18" font="4">Khảo sát cảm biến,</text>
+<text top="373" left="447" width="155" height="18" font="4">sản phẩm và nghiên</text>
+<text top="399" left="447" width="167" height="18" font="4">cứu trong nước; khảo</text>
+<text top="425" left="447" width="56" height="18" font="4">sát GT.</text>
+<text top="347" left="639" width="141" height="18" font="4">Phiếu đọc tài liệu;</text>
+<text top="373" left="639" width="154" height="18" font="4">nhật ký cài đặt; ứng</text>
+<text top="399" left="639" width="87" height="18" font="4">viên BOM.</text>
+<text top="450" left="160" width="38" height="18" font="4">W03</text>
+<text top="476" left="160" width="54" height="18" font="4">12/10–</text>
+<text top="502" left="160" width="44" height="18" font="4">18/10</text>
+<text top="450" left="255" width="148" height="18" font="4">Tổng hợp lựa chọn</text>
+<text top="476" left="255" width="165" height="18" font="4">nền tảng; kiểm luồng</text>
+<text top="502" left="255" width="89" height="18" font="4">flow/range.</text>
+<text top="450" left="447" width="172" height="18" font="4">Bảng so sánh ít nhất 8</text>
+<text top="476" left="447" width="144" height="18" font="4">tài liệu; kiểm chéo</text>
+<text top="502" left="447" width="53" height="18" font="4">nguồn.</text>
+<text top="450" left="639" width="115" height="18" font="4">M1 nộp 19/10;</text>
+<text top="476" left="639" width="154" height="18" font="4">quyết định cấu hình</text>
+<text top="502" left="639" width="154" height="18" font="4">hoặc ghi rõ blocker.</text>
+<text top="528" left="160" width="38" height="18" font="4">W04</text>
+<text top="554" left="160" width="54" height="18" font="4">19/10–</text>
+<text top="580" left="160" width="44" height="18" font="4">25/10</text>
+<text top="528" left="255" width="141" height="18" font="4">Xác minh tắt GPS</text>
+<text top="554" left="255" width="171" height="18" font="4">fusion, local estimate;</text>
+<text top="580" left="255" width="117" height="18" font="4">baseline hover.</text>
+<text top="528" left="447" width="148" height="18" font="4">Ghi GT/log, đổi hệ</text>
+<text top="554" left="447" width="139" height="18" font="4">trục, đồng bộ thời</text>
+<text top="580" left="447" width="173" height="18" font="4">gian và kiểm thử công</text>
+<text top="605" left="447" width="47" height="18" font="4">cụ đo.</text>
+<text top="528" left="639" width="136" height="18" font="4">Log baseline, cấu</text>
+<text top="554" left="639" width="141" height="18" font="4">hình khóa, dữ liệu</text>
+<text top="580" left="639" width="107" height="18" font="4">đo đối chứng.</text>
+<text top="631" left="160" width="38" height="18" font="4">W05</text>
+<text top="657" left="160" width="54" height="18" font="4">26/10–</text>
+<text top="683" left="160" width="44" height="18" font="4">01/11</text>
+<text top="631" left="255" width="163" height="18" font="4">Module giám sát bản</text>
+<text top="657" left="255" width="154" height="18" font="4">đầu; logic waypoint</text>
+<text top="683" left="255" width="56" height="18" font="4">cục bộ.</text>
+<text top="631" left="447" width="165" height="18" font="4">Kịch bản thử, dữ liệu</text>
+<text top="657" left="447" width="159" height="18" font="4">hiệu chuẩn, kiểm lỗi</text>
+<text top="683" left="447" width="155" height="18" font="4">mất/trễ sensor trong</text>
+<text top="709" left="447" width="46" height="18" font="4">SITL.</text>
+<text top="631" left="639" width="142" height="18" font="4">Kiểm thử module;</text>
+<text top="657" left="639" width="126" height="18" font="4">ngưỡng đề xuất,</text>
+<text top="683" left="639" width="137" height="18" font="4">chưa tuyên bố cải</text>
+<text top="709" left="639" width="44" height="18" font="4">thiện.</text>
+<text top="735" left="160" width="38" height="18" font="4">W06</text>
+<text top="760" left="160" width="53" height="18" font="4">02/11–</text>
+<text top="786" left="160" width="44" height="18" font="4">08/11</text>
+<text top="735" left="255" width="157" height="18" font="4">Tích hợp module và</text>
+<text top="760" left="255" width="173" height="18" font="4">chạy demo; mô tả giải</text>
+<text top="786" left="255" width="43" height="18" font="4">pháp.</text>
+<text top="735" left="447" width="151" height="18" font="4">Phân tích log, kiểm</text>
+<text top="760" left="447" width="125" height="18" font="4">cách chạy lại và</text>
+<text top="786" left="447" width="48" height="18" font="4">video.</text>
+<text top="735" left="639" width="115" height="18" font="4">M2 nộp 09/11:</text>
+<text top="760" left="639" width="155" height="18" font="4">PDF, Git, video 1–3</text>
+<text top="786" left="639" width="39" height="18" font="4">phút.</text>
+<text top="812" left="160" width="38" height="18" font="4">W07</text>
+<text top="838" left="160" width="53" height="18" font="4">09/11–</text>
+<text top="864" left="160" width="44" height="18" font="4">15/11</text>
+<text top="812" left="255" width="151" height="18" font="4">Sửa lỗi tích hợp; so</text>
+<text top="838" left="255" width="150" height="18" font="4">baseline và module</text>
+<text top="864" left="255" width="119" height="18" font="4">cùng điều kiện.</text>
+<text top="812" left="447" width="134" height="18" font="4">Nhận thiết bị nếu</text>
+<text top="838" left="447" width="136" height="18" font="4">được duyệt; kiểm</text>
+<text top="864" left="447" width="154" height="18" font="4">nguồn/driver không</text>
+<text top="889" left="447" width="42" height="18" font="4">cánh.</text>
+<text top="812" left="639" width="146" height="18" font="4">Báo cáo đối chứng</text>
+<text top="838" left="639" width="118" height="18" font="4">SITL; biên bản</text>
+<text top="864" left="639" width="103" height="18" font="4">kiểm thiết bị.</text>
+<text top="915" left="160" width="38" height="18" font="4">W08</text>
+<text top="941" left="160" width="53" height="18" font="4">16/11–</text>
+<text top="967" left="160" width="44" height="18" font="4">22/11</text>
+<text top="915" left="255" width="89" height="18" font="4">Hiệu chuẩn</text>
+<text top="941" left="255" width="135" height="18" font="4">hướng/offset/thời</text>
+<text top="967" left="255" width="171" height="18" font="4">gian; kiểm logic dừng</text>
+<text top="993" left="255" width="78" height="18" font="4">nhiệm vụ.</text>
+<text top="915" left="447" width="160" height="18" font="4">Hiệu chuẩn GT; RC,</text>
+<text top="941" left="447" width="154" height="18" font="4">an toàn nguồn/động</text>
+<text top="967" left="447" width="119" height="18" font="4">cơ không cánh.</text>
+<text top="915" left="639" width="121" height="18" font="4">Hồ sơ bench và</text>
+<text top="941" left="639" width="136" height="18" font="4">checklist an toàn;</text>
+<text top="967" left="639" width="89" height="18" font="4">lỗi còn mở.</text>
+<text top="1019" left="160" width="38" height="18" font="4">W09</text>
+<text top="1044" left="160" width="53" height="18" font="4">23/11–</text>
+<text top="1070" left="160" width="44" height="18" font="4">29/11</text>
+<text top="1019" left="255" width="125" height="18" font="4">Prototype luồng</text>
+<text top="1044" left="255" width="158" height="18" font="4">chính; chốt cấu hình</text>
+<text top="1070" left="255" width="101" height="18" font="4">đợt đánh giá.</text>
+<text top="1019" left="447" width="174" height="18" font="4">Kiểm thử lặp, kiểm dữ</text>
+<text top="1044" left="447" width="158" height="18" font="4">liệu và chuẩn bị khu</text>
+<text top="1070" left="447" width="167" height="18" font="4">bay nếu đủ điều kiện.</text>
+<text top="1019" left="639" width="115" height="18" font="4">M3 nộp 30/11:</text>
+<text top="1044" left="639" width="79" height="18" font="4">prototype,</text>
+<text top="1070" left="639" width="121" height="18" font="4">Git/video, danh</text>
+<text top="1096" left="639" width="65" height="18" font="4">sách lỗi.</text>
+<text top="1145" left="469" width="19" height="18" font="4">12</text>
+</page>
+<page number="15" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="139" left="160" width="49" height="18" font="4">Tuần /</text>
+<text top="165" left="160" width="38" height="18" font="4">ngày</text>
+<text top="139" left="255" width="115" height="18" font="4">Kiên phụ trách</text>
+<text top="139" left="447" width="129" height="18" font="4">Khanh phụ trách</text>
+<text top="139" left="639" width="105" height="18" font="4">Đầu ra chung</text>
+<text top="200" left="160" width="38" height="18" font="4">W10</text>
+<text top="226" left="160" width="53" height="18" font="4">30/11–</text>
+<text top="251" left="160" width="44" height="18" font="4">06/12</text>
+<text top="200" left="255" width="166" height="18" font="4">Vận hành phần mềm,</text>
+<text top="226" left="255" width="164" height="18" font="4">ghi log khi thử hover</text>
+<text top="251" left="255" width="167" height="18" font="4">có người lái phù hợp.</text>
+<text top="200" left="447" width="158" height="18" font="4">Thu GT/video, quan</text>
+<text top="226" left="447" width="113" height="18" font="4">sát đo và kiểm</text>
+<text top="251" left="447" width="162" height="18" font="4">checklist cùng người</text>
+<text top="277" left="447" width="70" height="18" font="4">giám sát.</text>
+<text top="200" left="639" width="142" height="18" font="4">Dữ liệu hover thật</text>
+<text top="226" left="639" width="136" height="18" font="4">nếu qua gate; nếu</text>
+<text top="251" left="639" width="136" height="18" font="4">chưa, báo GVHD</text>
+<text top="277" left="639" width="115" height="18" font="4">và ghi blocker.</text>
+<text top="303" left="160" width="37" height="18" font="4">W11</text>
+<text top="329" left="160" width="54" height="18" font="4">07/12–</text>
+<text top="355" left="160" width="44" height="18" font="4">13/12</text>
+<text top="303" left="255" width="71" height="18" font="4">Đánh giá</text>
+<text top="329" left="255" width="133" height="18" font="4">module/baseline;</text>
+<text top="355" left="255" width="134" height="18" font="4">phân tích nguyên</text>
+<text top="381" left="255" width="105" height="18" font="4">nhân thất bại.</text>
+<text top="303" left="447" width="141" height="18" font="4">Tổng hợp KPI, độ</text>
+<text top="329" left="447" width="166" height="18" font="4">không chắc chắn GT;</text>
+<text top="355" left="447" width="165" height="18" font="4">waypoint thật chỉ khi</text>
+<text top="381" left="447" width="62" height="18" font="4">an toàn.</text>
+<text top="303" left="639" width="139" height="18" font="4">M4 nộp 14/12: số</text>
+<text top="329" left="639" width="133" height="18" font="4">liệu, so mục tiêu,</text>
+<text top="355" left="639" width="107" height="18" font="4">nháp báo cáo.</text>
+<text top="406" left="160" width="38" height="18" font="4">W12</text>
+<text top="432" left="160" width="54" height="18" font="4">14/12–</text>
+<text top="458" left="160" width="44" height="18" font="4">20/12</text>
+<text top="406" left="255" width="168" height="18" font="4">Hoàn thiện phân tích;</text>
+<text top="432" left="255" width="171" height="18" font="4">sửa lỗi cần thiết, khóa</text>
+<text top="458" left="255" width="29" height="18" font="4">mã.</text>
+<text top="406" left="447" width="168" height="18" font="4">Tái hiện trên máy thứ</text>
+<text top="432" left="447" width="158" height="18" font="4">hai; hướng dẫn chạy</text>
+<text top="458" left="447" width="125" height="18" font="4">và kiểm tài liệu.</text>
+<text top="406" left="639" width="154" height="18" font="4">Báo cáo hoàn chỉnh</text>
+<text top="432" left="639" width="155" height="18" font="4">dự thảo; gói mã/cấu</text>
+<text top="458" left="639" width="99" height="18" font="4">hình/dữ liệu.</text>
+<text top="484" left="160" width="38" height="18" font="4">W13</text>
+<text top="510" left="160" width="54" height="18" font="4">21/12–</text>
+<text top="535" left="160" width="44" height="18" font="4">27/12</text>
+<text top="484" left="255" width="172" height="18" font="4">Hoàn thiện phần thuật</text>
+<text top="510" left="255" width="151" height="18" font="4">toán, slide và luyện</text>
+<text top="535" left="255" width="73" height="18" font="4">trình bày.</text>
+<text top="484" left="447" width="168" height="18" font="4">Hoàn thiện phần thực</text>
+<text top="510" left="447" width="159" height="18" font="4">nghiệm, video và hồ</text>
+<text top="535" left="447" width="94" height="18" font="4">sơ bàn giao.</text>
+<text top="484" left="639" width="115" height="18" font="4">M5 nộp 28/12:</text>
+<text top="510" left="639" width="138" height="18" font="4">PDF, slide, video,</text>
+<text top="535" left="639" width="121" height="18" font="4">mã, hướng dẫn.</text>
+<text top="613" left="149" width="27" height="19" font="1"><b>7.2</b></text>
+<text top="613" left="197" width="297" height="19" font="1"><b>Các mốc nộp và cơ chế phối hợp</b></text>
+<text top="661" left="149" width="659" height="18" font="4">Hạn nộp đều là 23:59: M0 ngày 05/10; M1 ngày 19/10; M2 ngày 09/11; M3 ngày</text>
+<text top="691" left="149" width="659" height="18" font="4">30/11; M4 ngày 14/12; M5 ngày 28/12/2026[<a href="m0-layout.html#17">1</a>]. Một thành viên đại diện nộp qua</text>
+<text top="722" left="149" width="337" height="16" font="6"><a href="https://forms.gle/vkhZSLVSyV9zHrgx7">https://forms.gle/vkhZSLVSyV9zHrgx7</a></text>
+<text top="721" left="490" width="318" height="18" font="4">bằng tài khoản trường; cả nhóm kiểm tra</text>
+<text top="750" left="149" width="659" height="18" font="4">email xác nhận. Link này thay link cũ bị lỗi theo email GVHD ngày <a href="m0-layout.html#18">25/09/2026[15].</a></text>
+<text top="784" left="191" width="617" height="18" font="4">Hai thành viên rà soát tiến độ hằng tuần, ghi việc đã làm, bằng chứng, lỗi và việc</text>
+<text top="814" left="149" width="659" height="18" font="4">tuần sau. Bản dùng thử của N02 được tiếp nhận theo thỏa thuận hai nhóm; các mốc</text>
+<text top="844" left="149" width="659" height="18" font="4">nội bộ ở bảng kế hoạch không phải cam kết đã được N02 chấp nhận. Nếu nền dùng</text>
+<text top="873" left="149" width="659" height="18" font="4">chung chưa sẵn sàng, N01 tiếp tục khảo sát, kiểm thử module và môi trường tối thiểu</text>
+<text top="903" left="149" width="339" height="18" font="4">độc lập, rồi đối chiếu cấu hình khi tích hợp.</text>
+<text top="975" left="149" width="13" height="23" font="2"><b>8</b></text>
+<text top="975" left="188" width="357" height="23" font="2"><b>Rủi ro và các điểm cần xác nhận</b></text>
+<text top="1145" left="469" width="19" height="18" font="4">13</text>
+</page>
+<page number="16" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="280" width="396" height="18" font="4">Bảng 5: Rủi ro, phương án xử lý và người theo dõi</text>
+<text top="187" left="169" width="49" height="18" font="4">Rủi ro</text>
+<text top="187" left="327" width="231" height="18" font="4">Cách xử lý / giới hạn kết luận</text>
+<text top="187" left="613" width="74" height="18" font="4">Phụ trách</text>
+<text top="222" left="169" width="131" height="18" font="4">Phiên bản/model</text>
+<text top="248" left="169" width="99" height="18" font="4">không tương</text>
+<text top="274" left="169" width="39" height="18" font="4">thích</text>
+<text top="222" left="327" width="262" height="18" font="4">Thử tích hợp sớm; lưu commit và</text>
+<text top="248" left="327" width="234" height="18" font="4">lỗi; dùng cấu hình tối thiểu tái</text>
+<text top="274" left="327" width="250" height="18" font="4">hiện được, không nâng bản giữa</text>
+<text top="300" left="327" width="55" height="18" font="4">đợt đo.</text>
+<text top="222" left="613" width="160" height="18" font="4">Kiên; phối hợp N02.</text>
+<text top="325" left="169" width="129" height="18" font="4">Dữ liệu flow mô</text>
+<text top="351" left="169" width="102" height="18" font="4">phỏng không</text>
+<text top="377" left="169" width="104" height="18" font="4">phản ánh ảnh</text>
+<text top="325" left="327" width="196" height="18" font="4">Kiểm mã plugin. Chỉ thử</text>
+<text top="351" left="327" width="265" height="18" font="4">texture/ánh sáng khi có luồng tính</text>
+<text top="377" left="327" width="241" height="18" font="4">từ ảnh; còn lại ghi là thử lỗi tín</text>
+<text top="403" left="327" width="38" height="18" font="4">hiệu.</text>
+<text top="325" left="613" width="43" height="18" font="4">Kiên.</text>
+<text top="429" left="169" width="121" height="18" font="4">Drift, range lỗi,</text>
+<text top="454" left="169" width="108" height="18" font="4">yaw/offset sai</text>
+<text top="429" left="327" width="268" height="18" font="4">Hiệu chuẩn, kiểm bề mặt/vùng đo;</text>
+<text top="454" left="327" width="234" height="18" font="4">không bỏ gate để ép bay; định</text>
+<text top="480" left="327" width="156" height="18" font="4">lượng giới hạn 30 s.</text>
+<text top="429" left="613" width="122" height="18" font="4">Kiên và Khanh.</text>
+<text top="506" left="169" width="140" height="18" font="4">GT sai hệ trục, trễ</text>
+<text top="532" left="169" width="88" height="18" font="4">hoặc thị sai</text>
+<text top="506" left="327" width="268" height="18" font="4">Kiểm bằng dịch chuyển biết trước;</text>
+<text top="532" left="327" width="264" height="18" font="4">đánh giá sai số đo; giữ dữ liệu thô</text>
+<text top="558" left="327" width="234" height="18" font="4">và không che khoảng mất GT.</text>
+<text top="506" left="613" width="57" height="18" font="4">Khanh.</text>
+<text top="584" left="169" width="105" height="18" font="4">Thiếu thiết bị</text>
+<text top="609" left="169" width="87" height="18" font="4">hoặc người</text>
+<text top="635" left="169" width="87" height="18" font="4">lái/khu bay</text>
+<text top="584" left="327" width="254" height="18" font="4">Xin mượn và xác nhận lịch sớm;</text>
+<text top="609" left="327" width="253" height="18" font="4">báo GVHD trước khi ảnh hưởng</text>
+<text top="635" left="327" width="261" height="18" font="4">M3/M4; không tự đổi nghiệm thu</text>
+<text top="661" left="327" width="128" height="18" font="4">thật thành SITL.</text>
+<text top="584" left="613" width="161" height="18" font="4">Khanh; cả nhóm báo</text>
+<text top="609" left="613" width="61" height="18" font="4">GVHD.</text>
+<text top="687" left="169" width="114" height="18" font="4">Module không</text>
+<text top="713" left="169" width="98" height="18" font="4">hơn baseline</text>
+<text top="687" left="327" width="258" height="18" font="4">Giữ bộ đối chứng, báo cả kết quả</text>
+<text top="713" left="327" width="263" height="18" font="4">âm; ưu tiên giải thích dữ liệu thay</text>
+<text top="739" left="327" width="167" height="18" font="4">vì thêm phạm vi mới.</text>
+<text top="687" left="613" width="144" height="18" font="4">Kiên; Khanh kiểm</text>
+<text top="713" left="613" width="42" height="18" font="4">chéo.</text>
+<text top="764" left="169" width="105" height="18" font="4">Phạm vi vượt</text>
+<text top="790" left="169" width="54" height="18" font="4">CE201</text>
+<text top="764" left="327" width="256" height="18" font="4">Chỉ một nền tảng và một module</text>
+<text top="790" left="327" width="213" height="18" font="4">thử nghiệm; chưa đưa ROS</text>
+<text top="816" left="327" width="259" height="18" font="4">2/SLAM/AI vào đường bắt buộc.</text>
+<text top="764" left="613" width="76" height="18" font="4">Cả nhóm.</text>
+<text top="880" left="191" width="617" height="18" font="4">Trước khi nộp, nhóm cần xác nhận: (1) phân công Kiên/Khanh; (2) cách diễn</text>
+<text top="910" left="149" width="79" height="18" font="4">giải sai số</text>
+<text top="908" left="233" width="40" height="19" font="9">±0,5</text>
+<text top="910" left="278" width="530" height="18" font="4">m và protocol waypoint; (3) phạm vi đóng góp của bộ giám sát; (4)</text>
+<text top="940" left="149" width="659" height="18" font="4">thiết bị, người giám sát và khu bay; (5) phiên bản cùng giao diện N02. Những mục</text>
+<text top="969" left="149" width="659" height="18" font="4">này cụ thể hóa cách thực hiện, không thay tên hay hướng đề tài đã giao. Nếu đề nghị</text>
+<text top="999" left="149" width="659" height="18" font="4">thay phạm vi/tiêu chí của GVHD, nhóm phản hồi trong chuỗi email với mã [N01]</text>
+<text top="1029" left="149" width="287" height="18" font="4">trước hạn 23:59 ngày 30/09/2026[<a href="m0-layout.html#17">1</a>].</text>
+<text top="1145" left="469" width="19" height="18" font="4">14</text>
+</page>
+<page number="17" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="128" left="149" width="209" height="23" font="2"><b>Tài liệu tham khảo</b></text>
+<text top="182" left="159" width="173" height="18" font="4">[1] N. D. X. Bách,</text>
+<text top="182" left="347" width="256" height="18" font="8"><i>Đồ án 1–2 HK1 2026–2027:</i></text>
+<text top="182" left="626" width="182" height="18" font="8"><i>Mô tả đề tài và kế</i></text>
+<text top="208" left="190" width="141" height="18" font="8"><i>hoạch thực hiện</i></text>
+<text top="208" left="331" width="477" height="18" font="4">, tài liệu GVHD gửi email 25/09/2026, tr. 1–3. Tệp:</text>
+<text top="235" left="190" width="316" height="16" font="6">MoTa_DeTai_DoAn_HK1_2026-2027.pdf</text>
+<text top="234" left="507" width="5" height="18" font="4">.</text>
+<text top="275" left="159" width="649" height="18" font="4">[2] L. V. Q. Lĩnh, ”Re: [Đồ án] Trao đổi phối hợp môi trường mô phỏng SITL cho</text>
+<text top="301" left="190" width="586" height="18" font="4">Drone,” email gửi P. C. Kiên và H. N. Khanh, 28/09/2026, 17:29 (UTC+7).</text>
+<text top="341" left="159" width="359" height="18" font="4">[3] PX4 Development Team, ”Optical Flow,”</text>
+<text top="341" left="522" width="130" height="18" font="8"><i>PX4 User Guide</i></text>
+<text top="341" left="652" width="156" height="18" font="4">, nhánh main. [Trực</text>
+<text top="367" left="190" width="54" height="18" font="4">tuyến].</text>
+<text top="369" left="250" width="510" height="16" font="6"><a href="https://docs.px4.io/main/en/sensor/optical_flow.html">https://docs.px4.io/main/en/sensor/optical_flow.html</a></text>
+<text top="367" left="761" width="47" height="18" font="4"><a href="https://docs.px4.io/main/en/sensor/optical_flow.html">. </a>Truy</text>
+<text top="393" left="190" width="132" height="18" font="4">cập: 29/09/2026.</text>
+<text top="434" left="159" width="566" height="18" font="4">[4] PX4 Development Team, ”Using PX4’s Navigation Filter (EKF2),”</text>
+<text top="434" left="730" width="77" height="18" font="8"><i>PX4 User</i></text>
+<text top="460" left="190" width="47" height="18" font="8"><i>Guide</i></text>
+<text top="460" left="238" width="215" height="18" font="4">, nhánh main. [Trực tuyến].</text>
+<text top="461" left="457" width="350" height="16" font="6"><a href="https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf.html">https://docs.px4.io/main/en/advanced</a></text>
+<text top="487" left="190" width="297" height="16" font="6"><a href="https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf.html">_config/tuning_the_ecl_ekf.html</a></text>
+<text top="485" left="487" width="184" height="18" font="4">. Truy cập: 29/09/2026.</text>
+<text top="526" left="159" width="423" height="18" font="4">[5] PX4 Development Team, ”4021_gz_x500_flow,”</text>
+<text top="526" left="588" width="112" height="18" font="8"><i>PX4-Autopilot</i></text>
+<text top="526" left="700" width="107" height="18" font="4">, v1.16.0, mã</text>
+<text top="552" left="190" width="248" height="18" font="4">cấu hình airframe. [Trực tuyến].</text>
+<text top="553" left="443" width="365" height="16" font="6"><a href="https://github.com/PX4/PX4-Autopilot/blob/v1.16.0/ROMFS/px4fmu_common/init.d-posix/airframes/4021_gz_x500_flow">https://github.com/PX4/PX4-Autopilot/b</a></text>
+<text top="579" left="190" width="618" height="16" font="6"><a href="https://github.com/PX4/PX4-Autopilot/blob/v1.16.0/ROMFS/px4fmu_common/init.d-posix/airframes/4021_gz_x500_flow">lob/v1.16.0/ROMFS/px4fmu_common/init.d-posix/airframes/4021_gz_x</a></text>
+<text top="605" left="190" width="77" height="16" font="6"><a href="https://github.com/PX4/PX4-Autopilot/blob/v1.16.0/ROMFS/px4fmu_common/init.d-posix/airframes/4021_gz_x500_flow">500_flow</a></text>
+<text top="604" left="267" width="184" height="18" font="4"><a href="https://github.com/PX4/PX4-Autopilot/blob/v1.16.0/ROMFS/px4fmu_common/init.d-posix/airframes/4021_gz_x500_flow">. </a>Truy cập: 29/09/2026.</text>
+<text top="644" left="159" width="372" height="18" font="4">[6] PX4 Development Team, ”GZBridge.cpp,”</text>
+<text top="644" left="537" width="112" height="18" font="8"><i>PX4-Autopilot</i></text>
+<text top="644" left="649" width="159" height="18" font="4">, nhánh main. [Trực</text>
+<text top="670" left="190" width="54" height="18" font="4">tuyến].</text>
+<text top="672" left="250" width="558" height="16" font="6"><a href="https://github.com/PX4/PX4-Autopilot/blob/main/src/modules/simulation/gz_bridge/GZBridge.cpp">https://github.com/PX4/PX4-Autopilot/blob/main/src/modules</a></text>
+<text top="697" left="190" width="326" height="16" font="6"><a href="https://github.com/PX4/PX4-Autopilot/blob/main/src/modules/simulation/gz_bridge/GZBridge.cpp">/simulation/gz_bridge/GZBridge.cpp</a></text>
+<text top="696" left="516" width="184" height="18" font="4">. Truy cập: 29/09/2026.</text>
+<text top="737" left="159" width="340" height="18" font="4">[7] MAVSDK Developers, ”telemetry.py,”</text>
+<text top="737" left="507" width="137" height="18" font="8"><i>MAVSDK-Python</i></text>
+<text top="737" left="644" width="164" height="18" font="4">, nhánh main. [Trực</text>
+<text top="763" left="190" width="54" height="18" font="4">tuyến].</text>
+<text top="764" left="251" width="557" height="16" font="6"><a href="https://github.com/mavlink/MAVSDK-Python/blob/main/mavsdk/telemetry.py">https://github.com/mavlink/MAVSDK-Python/blob/main/mavs</a></text>
+<text top="790" left="190" width="144" height="16" font="6"><a href="https://github.com/mavlink/MAVSDK-Python/blob/main/mavsdk/telemetry.py">dk/telemetry.py</a></text>
+<text top="789" left="334" width="184" height="18" font="4">. Truy cập: 29/09/2026.</text>
+<text top="829" left="159" width="371" height="18" font="4">[8] PX4 Development Team, ”Offboard Mode,”</text>
+<text top="829" left="533" width="125" height="18" font="8"><i>PX4 User Guide</i></text>
+<text top="829" left="658" width="150" height="18" font="4">, nhánh main. [Trực</text>
+<text top="855" left="190" width="54" height="18" font="4">tuyến].</text>
+<text top="856" left="251" width="552" height="16" font="6"><a href="https://docs.px4.io/main/en/flight_modes/offboard.html">https://docs.px4.io/main/en/flight_modes/offboard.html</a></text>
+<text top="855" left="803" width="5" height="18" font="4">.</text>
+<text top="881" left="190" width="174" height="18" font="4">Truy cập: 29/09/2026.</text>
+<text top="922" left="159" width="649" height="18" font="4">[9] N. Gageik, M. Strohmeier, và S. Montenegro, ”An Autonomous UAV with an</text>
+<text top="948" left="190" width="423" height="18" font="4">Optical Flow Sensor for Positioning and Navigation,”</text>
+<text top="947" left="619" width="189" height="18" font="8"><i>International Journal of</i></text>
+<text top="973" left="190" width="208" height="18" font="8"><i>Advanced Robotic Systems</i></text>
+<text top="973" left="398" width="339" height="18" font="4">, vol. 10, no. 10, 2013, doi: <a href="https://doi.org/10.5772/56813">10.5772/56813</a>.</text>
+<text top="1014" left="149" width="659" height="18" font="4">[10] R. Wang, D. Zou, C. Xu, L. Pei, P. Liu, và W. Yu, ”An aerodynamic model-</text>
+<text top="1040" left="190" width="388" height="18" font="4">aided state estimator for multi-rotor UAVs,” trong</text>
+<text top="1040" left="583" width="171" height="18" font="8"><i>Proc. IEEE/RSJ IROS</i></text>
+<text top="1040" left="755" width="53" height="18" font="4">, 2017,</text>
+<text top="1066" left="190" width="388" height="18" font="4">tr. 2164–2170, doi: <a href="https://doi.org/10.1109/IROS.2017.8206034">10.1109/IROS.2017.8206034</a>.</text>
+<text top="1145" left="469" width="19" height="18" font="4">15</text>
+</page>
+<page number="18" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="132" left="150" width="658" height="18" font="4">[11] D. Honegger, L. Meier, P. Tanskanen, và M. Pollefeys, ”An open source</text>
+<text top="158" left="190" width="618" height="18" font="4">and open hardware embedded metric optical flow CMOS camera for indoor</text>
+<text top="184" left="190" width="257" height="18" font="4">and outdoor applications,” trong</text>
+<text top="184" left="453" width="140" height="18" font="8"><i>Proc. IEEE ICRA</i></text>
+<text top="184" left="594" width="214" height="18" font="4">, 2013, tr. 1736–1741, doi:</text>
+<text top="209" left="190" width="236" height="18" font="4"><a href="https://doi.org/10.1109/ICRA.2013.6630805">10.1109/ICRA.2013.6630805.</a></text>
+<text top="250" left="149" width="659" height="18" font="4">[12] V. Grabe, H. H. Bülthoff, D. Scaramuzza, và P. R. Giordano, ”Nonlinear ego-</text>
+<text top="276" left="190" width="585" height="18" font="4">motion estimation from optical flow for online control of a quadrotor UAV,”</text>
+<text top="276" left="779" width="29" height="18" font="8"><i>The</i></text>
+<text top="302" left="190" width="337" height="18" font="8"><i>International Journal of Robotics Research</i></text>
+<text top="302" left="527" width="281" height="18" font="4">, vol. 34, no. 8, tr. 1114–1135, 2015,</text>
+<text top="328" left="190" width="265" height="18" font="4">doi: <a href="https://doi.org/10.1177/0278364915578646">10.1177/0278364915578646</a>.</text>
+<text top="369" left="149" width="659" height="18" font="4">[13] M.-T. Nguyen et al., ”Stabilzation Position of Quadcopter Using Vision-Based</text>
+<text top="394" left="190" width="416" height="18" font="4">Corner Detector from Top-Down Footage of Camera,”</text>
+<text top="394" left="609" width="198" height="18" font="8"><i>Journal of Technical Edu-</i></text>
+<text top="420" left="190" width="112" height="18" font="8"><i>cation Science</i></text>
+<text top="420" left="302" width="506" height="18" font="4">, số 71A, tr. 18–27, 2022, doi: <a href="https://doi.org/10.54644/jte.71A.2022.1132">10.54644/jte.71A.2022.1132</a>. [Trực</text>
+<text top="446" left="190" width="54" height="18" font="4">tuyến].</text>
+<text top="447" left="249" width="480" height="16" font="6"><a href="https://jte.edu.vn/index.php/jte/article/view/1132">https://jte.edu.vn/index.php/jte/article/view/1132</a></text>
+<text top="446" left="729" width="5" height="18" font="4">.</text>
+<text top="487" left="149" width="344" height="18" font="4">[14] PX4 Development Team, ”ARK Flow,”</text>
+<text top="487" left="497" width="126" height="18" font="8"><i>PX4 User Guide</i></text>
+<text top="487" left="622" width="186" height="18" font="4">, mô tả sản phẩm thương</text>
+<text top="513" left="190" width="142" height="18" font="4">mại. [Trực tuyến].</text>
+<text top="514" left="338" width="470" height="16" font="6"><a href="https://docs.px4.io/main/en/dronecan/ark_flow.html">https://docs.px4.io/main/en/dronecan/ark_flow.ht</a></text>
+<text top="540" left="190" width="19" height="16" font="6"><a href="https://docs.px4.io/main/en/dronecan/ark_flow.html">ml</a></text>
+<text top="538" left="209" width="184" height="18" font="4">. Truy cập: 29/09/2026.</text>
+<text top="579" left="149" width="659" height="18" font="4">[15] N. D. X. Bách, ”Re: Đồ án 1-2 HK1 2026-2027,” email đính chính link nộp báo</text>
+<text top="605" left="190" width="261" height="18" font="4">cáo, 25/09/2026, 05:10 (UTC+7).</text>
+<text top="1145" left="469" width="19" height="18" font="4">16</text>
+</page>
+<outline>
+<item page="3">Tóm tắt</item>
+<item page="3">Thông tin và căn cứ đặc tả</item>
+<outline>
+<item page="3">Tên đề tài và hướng thực hiện</item>
+<item page="4">Hiện trạng phối hợp với N02</item>
+</outline>
+<item page="4">Bài toán, mục tiêu và phạm vi</item>
+<outline>
+<item page="4">Bài toán kỹ thuật</item>
+<item page="4">Mục tiêu</item>
+<item page="5">Phạm vi thực hiện và loại trừ</item>
+</outline>
+<item page="5">Đầu vào, đầu ra và kiến trúc hệ thống</item>
+<outline>
+<item page="5">Đầu vào và đầu ra</item>
+<item page="6">Sơ đồ khối</item>
+<item page="6">Lựa chọn nền tảng và giao diện với N02</item>
+</outline>
+<item page="8">Giải pháp đề xuất và kế hoạch khảo sát</item>
+<outline>
+<item page="8">Phần có sẵn và phần nhóm thực hiện</item>
+<item page="9">Danh mục khảo sát dự kiến</item>
+</outline>
+<item page="10">Tiêu chí đạt và phương pháp đo</item>
+<outline>
+<item page="10">Yêu cầu gốc và diễn giải đề xuất</item>
+<item page="10">Hai loại sai số</item>
+<item page="11">Quy trình đo dự kiến</item>
+</outline>
+<item page="12">Thiết bị, phần mềm và an toàn</item>
+<outline>
+<item page="12">Danh mục dự kiến mượn và xác minh</item>
+<item page="13">Các bước kiểm tra an toàn</item>
+</outline>
+<item page="13">Kế hoạch 13 tuần và phân công</item>
+<outline>
+<item page="13">Phân công dự kiến</item>
+<item page="15">Các mốc nộp và cơ chế phối hợp</item>
+</outline>
+<item page="15">Rủi ro và các điểm cần xác nhận</item>
+<item page="16">Tài liệu tham khảo</item>
+</outline>
+</pdf2xml>

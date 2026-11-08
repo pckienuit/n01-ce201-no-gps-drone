@@ -1,0 +1,8 @@
+{
+  "run_id": "20261107_102154",
+  "test_name": "offboard_link_loss_fault_injection",
+  "altitude_at_fault_m": 1.0,
+  "failsafe_mode_triggered": false,
+  "safe_disarm_on_ground": false,
+  "test_result": "FAIL"
+}

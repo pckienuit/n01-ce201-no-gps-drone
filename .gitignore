@@ -1,0 +1,37 @@
+# Repo nộp: chỉ giữ src/, sim/, báo cáo M0-M2. Loại tài liệu nội bộ và đặc tả GVHD.
+/*
+!/.gitignore
+!/README.md
+!/src/
+!/sim/
+!/docs/
+!/architecture/
+/docs/*
+!/docs/M0/
+!/docs/M1/
+!/docs/M2/
+# File sinh tự động LaTeX
+*.aux
+*.toc
+*.log
+*.xdv
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+# Nặng hoặc tái tạo được
+*.ulg
+*.bson
+__pycache__/
+sim/evidence/*.mp4
+sim/evidence/docker-build.log
+sim/evidence/px4-build.log
+# Script quay thử/video dựng từ log (không dùng để nộp)
+sim/generate_demo_video*.py
+sim/make_gazebo_gui_video.py
+sim/record_gazebo_gui_*
+sim/do_record.sh
+sim/evidence/seg_*.mp4
+sim/evidence/cap_*.txt
+sim/evidence/list.txt
+sim/evidence/gui_*.mp4

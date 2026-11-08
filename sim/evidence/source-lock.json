@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-02T23:17:35.286747+07:00",
+  "px4_tag": "v1.16.0",
+  "px4_commit": "6ea3539157ca358c70a515878b77077af7d4611d",
+  "source_status": "",
+  "initialized_submodules": [
+    " e05f4312d3f28aa621157610584a4870406cb6d3 Tools/simulation/gz (e05f431)",
+    " 4cea5de87ce7e2a52e5289bd3639fd8eb770eafa src/drivers/gps/devices (4cea5de)",
+    " 9ef591c447fe0386d698bf6fb9a6d27e43988ee4 src/lib/events/libevents (9ef591c)",
+    " 052e6de72f67f1777198bce98f3de62f7f3c16a0 src/lib/heatshrink/heatshrink (heads/main)",
+    " 5bfd76d80281f6027134e854aafe6cb3dbfbe9e1 src/modules/mavlink/mavlink (5bfd76d)",
+    " 4960d4d20dcf9fc2981785355567fc5773416bc9 src/modules/mavlink/mavlink/pymavlink (4960d4d)",
+    " 711aef423edd1820347b866d1e4164832df35d04 src/modules/uxrce_dds_client/Micro-XRCE-DDS-Client (711aef4)"
+  ],
+  "base_image": "ubuntu@sha256:008173c23f95b170204355c12626cb5a965d779a7e1283b09e9cffbb1bf33ca3",
+  "runtime_verified": false,
+  "files": {
+    "ROMFS/px4fmu_common/init.d-posix/airframes/4021_gz_x500_flow": "dd4b19accb3594ab3ef197966e88f6e88621d1b21cb1009345444affcc3363a3",
+    "Tools/simulation/gz/models/x500_flow/model.sdf": "23dca39150c710acd1d6c17f85319d6e4d03d5953f0d5823313555dbaa0f398d",
+    "Tools/simulation/gz/models/optical_flow/model.sdf": "2ddd3d570c6c7b3f916015338aaa7858a283f50026fdd288137d8fce2b22c617"
+  }
+}

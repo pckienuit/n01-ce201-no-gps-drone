@@ -1,0 +1,34 @@
+{
+  "pages": 18,
+  "weeks": 13,
+  "references": 15,
+  "citation_order": "PASS",
+  "tex_warnings": "NONE",
+  "page_bounds": "PASS",
+  "dominant_fonts_pdftohtml_scale_1_5": [
+    [
+      "('GDJGUI+TimesNewRomanPSMT', '19')",
+      24517
+    ],
+    [
+      "('YUEHXQ+DejaVuSansMono', '16')",
+      678
+    ],
+    [
+      "('EFDIQF+TimesNewRomanPS', '19')",
+      550
+    ],
+    [
+      "('EFDIQF+TimesNewRomanPS', '22')",
+      479
+    ],
+    [
+      "('XXKOOU+TimesNewRomanPS', '19')",
+      446
+    ],
+    [
+      "('EFDIQF+TimesNewRomanPS', '26')",
+      321
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "20261108_093022",
+  "timestamp": "2026-11-08T09:31:08.853184",
+  "target_altitude_m": 1.0,
+  "hover_duration_requested_s": 30.0,
+  "hover_duration_actual_s": 0.0,
+  "samples_count": 1,
+  "abort_reason": "Safety Abort: Altitude error (1.391m) exceeded limit (0.8m)",
+  "kpi_target_max_horizontal_error_m": 0.5,
+  "telemetry_metrics": {
+    "max_horizontal_error_m": 0.0078,
+    "rmse_horizontal_error_m": 0.0078,
+    "p95_horizontal_error_m": 0.0078,
+    "mean_horizontal_error_m": 0.0078,
+    "max_vertical_error_m": 1.3905,
+    "rmse_vertical_error_m": 1.3905
+  },
+  "kpi_result": "FAIL",
+  "ground_truth_metrics": {
+    "gt_samples": 5677,
+    "est_samples": 14166,
+    "max_hold_error_gt_m": 0.0687,
+    "mean_hold_error_gt_m": 0.0036
+  }
+}

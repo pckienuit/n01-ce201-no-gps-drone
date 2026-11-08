@@ -1,0 +1,13 @@
+{
+  "pages": 5,
+  "page_limit_3_5": "PASS",
+  "weeks": 13,
+  "references": 10,
+  "citation_order": "PASS",
+  "tex_warnings": "NONE",
+  "page_bounds": "PASS",
+  "required_content": "PASS",
+  "no_unsupported_claims": "PASS",
+  "font_13pt_outside_figures": "PASS",
+  "note": "Automated checks do not imply advisor approval, submission or flight validation."
+}

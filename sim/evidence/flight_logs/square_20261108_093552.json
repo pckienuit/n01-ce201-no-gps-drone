@@ -1,0 +1,76 @@
+{
+  "run_id": "20261108_093552",
+  "timestamp": "2026-11-08T09:37:39.490859",
+  "trajectory_type": "square_2x2m",
+  "altitude_m": 1.0,
+  "cruise_speed_m_s": 0.25,
+  "total_duration_s": 45.65,
+  "samples_count": 880,
+  "abort_reason": null,
+  "telemetry_metrics": {
+    "max_tracking_error_m": 1.3122,
+    "rmse_tracking_error_m": 0.7625,
+    "loop_closure_error_m": 0.1762
+  },
+  "corner_metrics": [
+    {
+      "vertex": "WP1_North",
+      "target_xy": [
+        2.0,
+        0.0
+      ],
+      "actual_xy": [
+        1.8105,
+        0.0371
+      ],
+      "final_corner_error_m": 0.2145,
+      "mean_dwell_error_m": 0.5864
+    },
+    {
+      "vertex": "WP2_East",
+      "target_xy": [
+        2.0,
+        2.0
+      ],
+      "actual_xy": [
+        2.0864,
+        1.636
+      ],
+      "final_corner_error_m": 0.4038,
+      "mean_dwell_error_m": 0.7943
+    },
+    {
+      "vertex": "WP3_South",
+      "target_xy": [
+        0.0,
+        2.0
+      ],
+      "actual_xy": [
+        0.1042,
+        2.0041
+      ],
+      "final_corner_error_m": 0.1043,
+      "mean_dwell_error_m": 0.4339
+    },
+    {
+      "vertex": "WP4_Home",
+      "target_xy": [
+        0.0,
+        0.0
+      ],
+      "actual_xy": [
+        -0.0016,
+        0.1536
+      ],
+      "final_corner_error_m": 0.1715,
+      "mean_dwell_error_m": 0.4878
+    }
+  ],
+  "trajectory_completed": true,
+  "ground_truth_metrics": {
+    "gt_samples": 1429,
+    "est_samples": 3550,
+    "loop_closure_gt_m": 0.1918,
+    "max_deviation_gt_m": 2.7505
+  }
+}
