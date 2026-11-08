@@ -13,8 +13,8 @@ import numpy as np
 
 LOGS_DIR = Path('/workspace/sim/evidence/flight_logs')
 
-def plot_hover():
-    hover_csv = LOGS_DIR / 'hover_20261107_101448.csv'
+def plot_hover(run_id='20261108_133915'):
+    hover_csv = LOGS_DIR / f'hover_{run_id}.csv'
     if not hover_csv.exists():
         print(f"File not found: {hover_csv}")
         return
@@ -50,7 +50,7 @@ def plot_hover():
     ax2.legend(loc='upper right')
     
     plt.tight_layout()
-    out1 = LOGS_DIR / 'hover_plot_20261107_101448.png'
+    out1 = LOGS_DIR / f'hover_plot_{run_id}.png'
     plt.savefig(out1, dpi=200)
     plt.close()
     print(f"Generated hover plot: {out1}")

@@ -27,7 +27,7 @@ required_tokens = [
     "23520804", "23520716", "Nguyễn Duy Xuân Bách",
     "top=3cm", "bottom=3.5cm", "left=3.5cm", "right=2cm",
     "\\setmainfont{Times New Roman}", "\\@setfontsize\\normalsize{13}{16}",
-    "0{,}4054", "0{,}0652", "20261107\\_101448", "20261107\\_101837", "20261107\\_103243",
+    "0{,}1300", "0{,}0652", "20261108_133915", "20261107_101837", "20261107_103243",
     "Gate G1", "Gate G2", "SITL", "Ground Truth", "EKF2", "Optical Flow", "Rangefinder",
     "AUTO\\_LAND", "DISARMED"
 ]

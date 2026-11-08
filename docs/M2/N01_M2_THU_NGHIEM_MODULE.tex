@@ -164,7 +164,7 @@ Môi trường thực nghiệm được nhóm đóng gói trong Docker container
 Khi thiết lập mô phỏng ban đầu, nhóm xử lý hai lỗi phát sinh trên PX4 v1.16 SITL:
 \begin{enumerate}
   \item \textbf{Thiếu plugin OpticalFlowSystem:} Script khởi chạy Gazebo của PX4 v1.16 không tự nạp đường dẫn thư viện \code{libOpticalFlowSystem.so}, làm mất topic quang lưu. Nhóm xuất đường dẫn qua hai biến môi trường \code{GZ_SIM_SYSTEM_PLUGIN_PATH} và \code{GZ_SIM_SERVER_CONFIG_PATH} để nạp plugin đúng vị trí.
-  \item \textbf{Hiện tượng trôi dạt do mặt sàn thiếu vân bề mặt (Featureless Ground):} Mô hình quang lưu dùng thuật toán bám góc Kanade--Lucas--Tomasi (KLT). Mặt sàn xám mặc định trong Gazebo có độ lệch chuẩn mức xám bằng 0 ($\text{std} = 0{,}0$), khiến thuật toán không thể trích xuất đặc trưng và trả về chất lượng $0/255$. Nhóm tạo mặt sàn có hoa văn bàn cờ đa tỉ lệ kết hợp nhiễu ngẫu nhiên kích thước $2048 \times 2048$ pixel (\code{textured\_plane.png}, $\text{std} = 58{,}5$), đưa vào tệp mô tả thế giới \code{indoor\_flow.sdf}. Hình~\ref{fig:textured_cam} là khung hình thực tế camera thu được.
+  \item \textbf{Hiện tượng trôi dạt do mặt sàn thiếu vân bề mặt (Featureless Ground):} Mô hình quang lưu dùng thuật toán bám góc Kanade--Lucas--Tomasi (KLT). Mặt sàn xám mặc định trong Gazebo có độ lệch chuẩn mức xám bằng 0 ($\text{std} = 0{,}0$), khiến thuật toán không thể trích xuất đặc trưng và trả về chất lượng $0/255$. Nhóm tạo mặt sàn có hoa văn bàn cờ đa tỉ lệ kết hợp nhiễu ngẫu nhiên kích thước $2048 \times 2048$ pixel (\code{textured_plane.png}, $\text{std} = 58{,}5$), đưa vào tệp mô tả thế giới \code{indoor_flow.sdf}. Hình~\ref{fig:textured_cam} là khung hình thực tế camera thu được.
 \end{enumerate}
 
 \begin{figure}[ht]
@@ -178,7 +178,7 @@ Khi thiết lập mô phỏng ban đầu, nhóm xử lý hai lỗi phát sinh tr
 Hệ thống cần vượt qua cổng nghiệm thu mô phỏng Gate G1 với ba bài thử nghiệm độc lập. Số liệu được trích xuất từ tệp ULog và chuỗi thời gian CSV tại \code{sim/evidence/flight_logs/}.
 
 \subsection{Thực nghiệm 1: Bay giữ vị trí tự động 30 giây (Hover Position Hold)}
-Drone nhận lệnh cất cánh tự động bằng chế độ Offboard Local-NED, nâng độ cao lên $1{,}0\text{ m}$ ($z = -1{,}0\text{ m}$), giữ vị trí ổn định trong 30 giây và hạ cánh tự động. Kết quả đo đạc (Run ID \code{20261107\_101448}) trình bày tại Bảng~\ref{tab:hover_metrics} và Hình~\ref{fig:hover_plot}.
+Drone nhận lệnh cất cánh tự động bằng chế độ Offboard Local-NED, nâng độ cao lên $1{,}0\text{ m}$ ($z = -1{,}0\text{ m}$), giữ vị trí ổn định trong 30 giây và hạ cánh tự động. Kết quả đo đạc (Run ID \code{20261108_133915}) trình bày tại Bảng~\ref{tab:hover_metrics} và Hình~\ref{fig:hover_plot}. Cửa sổ 30 giây được đếm theo thời gian mô phỏng của PX4 (odometry), không theo đồng hồ thật, vì mô phỏng chạy dưới thời gian thực khi bật giao diện đồ họa. Sai số Ground Truth tính trong cửa sổ giữ vị trí, so với điểm Ground Truth lúc bắt đầu giữ vị trí, không so với gốc tọa độ để loại phần cất cánh.
 
 \begingroup\tblfont
 \begin{table}[ht]
@@ -186,12 +186,12 @@ Drone nhận lệnh cất cánh tự động bằng chế độ Offboard Local-N
 \caption{Chỉ số thực nghiệm bay giữ vị trí 30 giây (Hover $1{,}0\text{ m}$)}\label{tab:hover_metrics}
 \begin{tabularx}{\linewidth}{L{5.0cm}YYL{3.2cm}}
 \toprule Chỉ số đánh giá & Giá trị thực nghiệm & Ngưỡng KPI đề tài & Kết luận\\\midrule
-Thời gian giữ vị trí thực tế & $29{,}95\text{ s}$ & $30{,}0\text{ s}$ & Đạt\\
-Sai số ngang cực đại ước lượng ($e_{\text{hold}}$) & $\mathbf{0{,}2505\text{ m}}$ & $\le 0{,}50\text{ m}$ & Đạt yêu cầu\\
-\textbf{Sai số ngang cực đại Ground Truth ($e_{\text{GT}}$)} & $\mathbf{0{,}4054\text{ m}}$ & $\le \mathbf{0{,}50\text{ m}}$ & \textbf{Đạt chuẩn KPI}\\
-RMSE sai số ngang so với Ground Truth & $0{,}1894\text{ m}$ & - & Ổn định tốt\\
-Sai số độ cao so với mục tiêu $1{,}0\text{ m}$ & $\text{Max} = 0{,}4360\text{ m}$ ($\text{RMSE} = 0{,}1462\text{ m}$) & $[0{,}8\text{ m} \div 1{,}5\text{ m}]$ & Đạt\\
-Tỷ lệ mẫu fuse Optical Flow thành công & $95{,}8\%$ ($2039 / 2129$ mẫu) & $\ge 80\%$ & Bộ lọc hội tụ tốt\\\bottomrule
+Thời gian giữ vị trí (thời gian mô phỏng) & $30{,}0\text{ s}$ & $30{,}0\text{ s}$ & Đạt\\
+Sai số ngang cực đại ước lượng ($e_{\text{hold}}$) & $\mathbf{0{,}2336\text{ m}}$ & $\le 0{,}50\text{ m}$ & Đạt yêu cầu\\
+\textbf{Sai số ngang cực đại Ground Truth ($e_{\text{GT}}$)} & $\mathbf{0{,}1300\text{ m}}$ & $\le \mathbf{0{,}50\text{ m}}$ & \textbf{Đạt chuẩn KPI}\\
+RMSE lệch ước lượng so với Ground Truth & $0{,}0243\text{ m}$ & - & Ổn định tốt\\
+Sai số độ cao so với mục tiêu $1{,}0\text{ m}$ & $\text{Max} = 0{,}1977\text{ m}$ ($\text{RMSE} = 0{,}0480\text{ m}$) & $[0{,}8\text{ m} \div 1{,}5\text{ m}]$ & Đạt\\
+Tỷ lệ mẫu fuse Optical Flow thành công & $100\%$ ($1454 / 1454$ mẫu) & $\ge 80\%$ & Bộ lọc hội tụ tốt\\\bottomrule
 \end{tabularx}
 \end{table}
 \endgroup
@@ -203,7 +203,7 @@ Tỷ lệ mẫu fuse Optical Flow thành công & $95{,}8\%$ ($2039 / 2129$ mẫu
 \end{figure}
 
 \subsection{Thực nghiệm 2: Bay bám quỹ đạo hình vuông 2x2m (Square Trajectory)}
-Drone thực hiện lộ trình bay qua 4 đỉnh: $W_0(0,0) \to W_1(2,0) \to W_2(2,2) \to W_3(0,2) \to W_4(0,0)\text{ m}$ ở độ cao $1{,}0\text{ m}$, vận tốc hành trình $0{,}25\text{ m/s}$ và dừng 3 giây tại mỗi đỉnh (Run ID \code{20261107\_101837}). Kết quả chi tiết tại Bảng~\ref{tab:square_metrics} và Hình~\ref{fig:square_plot}.
+Drone thực hiện lộ trình bay qua 4 đỉnh: $W_0(0,0) \to W_1(2,0) \to W_2(2,2) \to W_3(0,2) \to W_4(0,0)\text{ m}$ ở độ cao $1{,}0\text{ m}$, vận tốc hành trình $0{,}25\text{ m/s}$ và dừng 3 giây tại mỗi đỉnh (Run ID \code{20261107_101837}). Kết quả chi tiết tại Bảng~\ref{tab:square_metrics} và Hình~\ref{fig:square_plot}. Video minh họa ghi lại một lần chạy lặp khác (Run ID \code{20261108_125334}, đủ $4/4$ đỉnh, sai số khép vòng Ground Truth $0{,}0647\text{ m}$); số liệu trong bảng lấy từ lần chạy gốc có log đầy đủ nêu trên.
 
 \begingroup\tblfont
 \begin{table}[ht]
@@ -228,11 +228,11 @@ Tổng thời gian bay & - & $45{,}41\text{ giây}$ (880 mẫu) & Hoàn thành $
 \end{figure}
 
 \subsection{Thực nghiệm 3: Kiểm thử an toàn và Xử lý sự cố (Fault Injection)}
-Để kiểm tra khả năng vận hành an toàn theo chuẩn CĐR PLO4 của học phần CE201, kịch bản \code{src/test_fault_injection.py} mô phỏng sự cố mất liên lạc hoàn toàn với Companion Computer khi drone đang giữ vị trí ở độ cao $1{,}0\text{ m}$ (ngắt tiến trình \code{mavsdk\_server}).
+Để kiểm tra khả năng vận hành an toàn theo chuẩn CĐR PLO4 của học phần CE201, kịch bản \code{src/test_fault_injection.py} mô phỏng sự cố mất liên lạc hoàn toàn với Companion Computer khi drone đang giữ vị trí ở độ cao $1{,}0\text{ m}$ (ngắt tiến trình \code{mavsdk_server}).
 \begin{itemize}
   \item \textbf{Phát hiện sự cố:} Sau thời gian chờ $1{,}0\text{ s}$ (\code{COM_OF_LOSS_T=1.0}), PX4 nhận diện mất luồng setpoint Offboard.
-  \item \textbf{Kích hoạt Failsafe:} Với cấu hình tham số \code{COM\_OBL\_RC\_ACT=4}, autopilot tự động chuyển sang chế độ \textbf{AUTO\_LAND} (\code{nav\_state=18}), không để drone trôi dạt tự do.
-  \item \textbf{Hạ cánh và ngắt động cơ:} Drone hạ cánh có kiểm soát xuống mặt sàn với vận tốc tiếp đất $v_z \approx -0{,}02\text{ m/s}$. Bộ phát hiện tiếp đất (Land Detector) xác nhận chạm sàn và tự động ngắt động cơ (\textbf{DISARMED}) ở giây thứ $13{,}6$ (Run ID \code{20261107\_103243}).
+  \item \textbf{Kích hoạt Failsafe:} Với cấu hình tham số \code{COM_OBL_RC_ACT=4}, autopilot tự động chuyển sang chế độ \textbf{AUTO\_LAND} (\code{nav_state=18}), không để drone trôi dạt tự do.
+  \item \textbf{Hạ cánh và ngắt động cơ:} Drone hạ cánh có kiểm soát xuống mặt sàn với vận tốc tiếp đất $v_z \approx -0{,}02\text{ m/s}$. Bộ phát hiện tiếp đất (Land Detector) xác nhận chạm sàn và tự động ngắt động cơ (\textbf{DISARMED}) ở giây thứ $13{,}6$ (Run ID \code{20261107_103243}).
 \end{itemize}
 
 Kết quả cho thấy hệ thống đáp ứng đầy đủ các tiêu chí nghiệm thu Gate G1 SITL.
@@ -258,7 +258,7 @@ Báo cáo mốc M2 đã hoàn thành các mục tiêu theo đề cương học p
 \begin{itemize}
   \item Luận giải cơ sở kỹ thuật của giải pháp định vị trong nhà bằng Optical Flow kết hợp Rangefinder và bộ lọc EKF2.
   \item Xây dựng môi trường mô phỏng cô lập trên nền Docker, xử lý lỗi thiếu plugin quang lưu và bổ sung mặt sàn có hoa văn để thuật toán KLT hoạt động ổn định.
-  \item Kiểm chứng định lượng ba bài thử nghiệm cốt lõi trên SITL: giữ vị trí 30 giây đạt sai số Ground Truth cực đại $0{,}4054\text{ m} \le 0{,}50\text{ m}$ (đáp ứng KPI đề tài); bay quỹ đạo hình vuông $2 \times 2\text{ m}$ qua 4 đỉnh với sai số khép vòng $6{,}5\text{ cm}$; và kiểm thử tiêm lỗi mất kết nối máy tính đồng hành, kích hoạt failsafe tự động hạ cánh và ngắt động cơ an toàn.
+  \item Kiểm chứng định lượng ba bài thử nghiệm cốt lõi trên SITL: giữ vị trí 30 giây đạt sai số Ground Truth cực đại $0{,}13\text{ m} \le 0{,}50\text{ m}$ (đáp ứng KPI đề tài); bay quỹ đạo hình vuông $2 \times 2\text{ m}$ qua 4 đỉnh với sai số khép vòng $6{,}5\text{ cm}$; và kiểm thử tiêm lỗi mất kết nối máy tính đồng hành, kích hoạt failsafe tự động hạ cánh và ngắt động cơ an toàn.
 \end{itemize}
 
 \begingroup\setstretch{1.0}\normalsize\raggedright

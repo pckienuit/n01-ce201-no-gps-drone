@@ -2,7 +2,7 @@
 # Quay hover + square + fault trên GUI Gazebo thật, mỗi đoạn một file, container sạch mỗi lần.
 # EKF phải hội tụ (ekf_gate.sh) trước khi quay; thử lại tối đa 3 lần mỗi đoạn.
 cd "$(dirname "$0")/.."
-for M in hover square fault; do
+for M in ${MISSIONS:-hover square fault}; do
   for try in 1 2 3; do
     echo "=== $M (lần $try) ==="
     bash sim/sitl.sh stop >/dev/null 2>&1

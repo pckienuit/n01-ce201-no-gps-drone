@@ -21,7 +21,8 @@ from pyulog import ULog
 
 # Mission parameters
 TARGET_ALTITUDE_M = 1.0       # Hover altitude: 1.0m (z = -1.0m in NED)
-HOVER_DURATION_S = 30.0       # Hold window: 30 seconds
+HOVER_DURATION_S = 30.0       # Hold window: 30 s THỜI GIAN SIM (PX4 odometry), không phải đồng hồ tường
+HOVER_WALL_CAP_S = 300.0      # Chặn trên theo đồng hồ tường, phòng sim đứng (RTF quá thấp)
 SETPOINT_RATE_HZ = 20.0       # 20 Hz setpoint stream
 DT = 1.0 / SETPOINT_RATE_HZ
 RAMP_SPEED_M_S = 0.4          # Smooth vertical climb/descent speed
@@ -154,13 +155,26 @@ async def run_mission():
             break
         await asyncio.sleep(DT)
 
-    # 30-Second Hover Measurement Window
-    hover_start_time = time.time()
-    hover_end_time = hover_start_time + HOVER_DURATION_S
+    # Thời gian PX4 (sim time): cửa sổ 30 s phải đếm theo đây, không theo đồng hồ tường, vì RTF < 1.
+    sim_clock = {"t": None}
+
+    async def sim_time_listener():
+        async for o in drone.telemetry.odometry():
+            sim_clock["t"] = o.time_usec / 1e6
+
+    sim_task = asyncio.create_task(sim_time_listener())
+
+    # 30-Second Hover Measurement Window (đo bằng sim time)
+    while sim_clock["t"] is None:
+        await asyncio.sleep(0.05)
+    sim_start = sim_clock["t"]
+    wall_start = time.time()
+    hover_start_time = wall_start
+    hover_end_time = wall_start + HOVER_WALL_CAP_S
     step = 0
 
-    while time.time() < hover_end_time:
-        t_rel = time.time() - hover_start_time
+    while time.time() < hover_end_time and (sim_clock["t"] - sim_start) < HOVER_DURATION_S:
+        t_rel = sim_clock["t"] - sim_start
         sp = PositionNedYaw(takeoff_x, takeoff_y, target_z, 0.0)
         await drone.offboard.set_position_ned(sp)
 
@@ -227,6 +241,7 @@ async def run_mission():
         break
 
     telem_task.cancel()
+    sim_task.cancel()
 
     # Save CSV Timeseries
     csv_file = OUTPUT_DIR / f"hover_{run_id}.csv"
@@ -341,17 +356,34 @@ def analyze_ulog_gt(ulg_path: Path):
         y_est = lpos.data["y"]
         z_est = lpos.data["z"]
 
-        # Calculate hold error relative to initial hover position (or origin)
-        err_hold_gt = [math.sqrt(x**2 + y**2) for x, y in zip(x_gt, y_gt)]
-        max_hold_gt = max(err_hold_gt) if err_hold_gt else None
-
-        # Compare estimator vs GT (interpolate or simple index match if aligned)
-        # For simplicity, calculate summary on GT
+        # Cửa sổ hover = các mẫu estimator có độ cao >= 85% độ cao đỉnh (loại cất cánh/hạ cánh).
+        # ponytail: xấp xỉ theo độ cao; thay bằng mốc thời gian mission nếu cần khớp 30 s chính xác.
+        import numpy as np
+        t_e = np.asarray(t_est) / 1e6
+        alt = -np.asarray(z_est)
+        idx = np.where(alt >= 0.85 * alt.max())[0]
+        if len(idx) < 2:
+            return {"error": "Không tìm thấy cửa sổ hover trong ULog"}
+        t0, t1 = t_e[idx[0]], t_e[idx[-1]]
+        t_g = np.asarray(t_gt) / 1e6
+        m = (t_g >= t0) & (t_g <= t1)
+        if not m.any():
+            return {"error": "Không có mẫu GT trong cửa sổ hover"}
+        xg, yg = np.asarray(x_gt)[m], np.asarray(y_gt)[m]
+        # Sai số giữ vị trí GT: so với điểm GT lúc bắt đầu hover (không phải gốc tọa độ).
+        err_hold_gt = np.hypot(xg - xg[0], yg - yg[0])
+        # Lệch estimator so với GT (cùng gốc là điểm bắt đầu hover), GT nội suy theo thời gian estimator.
+        xe = np.interp(t_g[m], t_e, np.asarray(x_est)); ye = np.interp(t_g[m], t_e, np.asarray(y_est))
+        drift = np.hypot((xg - xg[0]) - (xe - xe[0]), (yg - yg[0]) - (ye - ye[0]))
         return {
-            "gt_samples": len(t_gt),
+            "gt_samples": int(m.sum()),
             "est_samples": len(t_est),
-            "max_hold_error_gt_m": round(max_hold_gt, 4) if max_hold_gt is not None else None,
-            "mean_hold_error_gt_m": round(sum(err_hold_gt)/len(err_hold_gt), 4) if err_hold_gt else None
+            "hover_window_sim_s": round(float(t1 - t0), 2),
+            "max_hold_error_gt_m": round(float(err_hold_gt.max()), 4),
+            "mean_hold_error_gt_m": round(float(err_hold_gt.mean()), 4),
+            "p95_hold_error_gt_m": round(float(np.percentile(err_hold_gt, 95)), 4),
+            "rmse_estimator_vs_gt_m": round(float(math.sqrt((drift ** 2).mean())), 4),
+            "max_estimator_vs_gt_m": round(float(drift.max()), 4),
         }
     except Exception as e:
         return {"error": f"Failed to parse ULog GT: {e}"}
